@@ -1,6 +1,8 @@
-<!-- Quick access to profile graphs https://profile-readme-generator.com/ >
+<!-- Quick access to profile graphs: https://profile-readme-generator.com/ >
 
-<!-- Cool tool https://glitch.com/~github-contribution-graph-art-generator >
+<!-- Cool tool: https://glitch.com/~github-contribution-graph-art-generator >
+
+<!-- Youtube Cards: https://github.com/DenverCoder1/github-readme-youtube-cards#basic-usage >
 
 <!------------------------------------------------------------------------------------->
 <!-- Header -->
