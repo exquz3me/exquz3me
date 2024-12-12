@@ -24,6 +24,8 @@
 ---
 
 <!-- BEGIN YOUTUBE-CARDS -->
+[![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
+[![the debut ~ ☆](https://ytcards.demolab.com/?id=UCL3GIeNUG0&title=the+debut+~+%E2%98%86&lang=en&timestamp=1666783735&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "the debut ~ ☆")](https://www.youtube.com/watch?v=UCL3GIeNUG0)
 <!-- END YOUTUBE-CARDS -->
 
 ---
