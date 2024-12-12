@@ -16,7 +16,7 @@
 
 <div align="center" style="display: flex align-items: center;">
   <img src="https://github-readme-stats.vercel.app/api?username=exquz3me&theme=nord&show_icons=true&hide_border=true&count_private=true" height="220" alt="stats graph" />
-  <img margin=8 width="217.1" height="220" src="./bad-apple.gif" />
+  <img margin=8 src="./bad-apple.gif" />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=exquz3me&radius=8&theme=nord&area=true&hide_border=true&order=5" height="261.9" alt="activity-graph graph" />
     <img src="https://github-profile-trophy.vercel.app?username=exquz3me&theme=nord&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=true&order=4" height="88.2" alt="trophy graph" />
 </div>
