@@ -64,4 +64,4 @@
 <!-- References -->
 [lain]: https://media.tenor.com/1QlojlC2nVkAAAAi/lain.gif
 [page-views]:https://komarev.com/ghpvc/?username=exquz3me&label=Profile%20views&color=0e75b6&style=flat
-[code-time]: https://img.shields.io/endpoint?style=social&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D30623%26project%3D%26in=0
+[code-time]: https://img.shields.io/endpoint?style=flat&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D30623%26project%3D%26in=0
