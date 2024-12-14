@@ -23,19 +23,9 @@
 <!-- Header -->
 
 <div align="center">
-    <img src="./media/miku.svg" alt="utf8-miku">
+    <img width="260" src="./media/art.svg" alt="art">
+    <img width="340" src="./media/sphoon.svg" alt="sphoon">
 </div>
-
-```
-            _                       
-           | |                      
-  ___ _ __ | |__   ___   ___  _ __  
- / __| '_ \| '_ \ / _ \ / _ \| '_ \ 
- \__ \ |_) | | | | (_) | (_) | | | |
- |___/ .__/|_| |_|\___/ \___/|_| |_|
-     | |             -- aka exquz3me
-     |_|                            
-```
 
 ---
 
