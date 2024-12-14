@@ -4,7 +4,7 @@
 
 <!-- Youtube Cards: https://github.com/DenverCoder1/github-readme-youtube-cards#basic-usage >
 
-<!-- UTF8 Art: http://aa.en.utf8art.com/node/445 
+<!-- UTF8 Art: http://aa.en.utf8art.com/node/445
     - Use specified settings for the artwork given on the website
     - Use <p> tag for the artwork
     - Use <br> on line breaks
@@ -23,7 +23,7 @@
 
 <!------------------------------------------------------------------------------------->
 <!-- Header -->
-
+<img src="./media/dark-theme.svg" />
 <h1 align="center">
     <img width="200" src="./media/art-header.svg" alt="utf8-art">
     <img width="355" src="./media/header.svg" alt="sphoon">
@@ -31,6 +31,9 @@
 
 <!------------------------------------------------------------------------------------->
 <!-- Main Area -->
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 <div align="center" style="display: flex align-items: center;">
 
@@ -43,7 +46,9 @@
 ---
 
 <!-- BEGIN YOUTUBE-CARDS -->
+
 [![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
+
 <!-- END YOUTUBE-CARDS -->
 
 ---
@@ -73,7 +78,7 @@
 ###
 
 ![Page Views][page-views]
-![CodeTime Badge][code-time]
+[![WakaTime Badge][wakatime]]("https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725")
 
 <!------------------------------------------------------------------------------------->
 <!-- Footer -->
@@ -86,4 +91,4 @@
 <!-- References -->
 
 [page-views]: https://komarev.com/ghpvc/?username=exquz3me&label=Profile%20views&color=0e75b6&style=flat
-[code-time]: https://img.shields.io/endpoint?style=flat&color=222&url=https%3A%2F%2Fapi.codetime.dev%2Fshield%3Fid%3D30623%26project%3D%26in=0
+[wakatime]: https://wakatime.com/badge/user/163d6b45-39a7-4e5d-8c76-362e0ac68725.svg
