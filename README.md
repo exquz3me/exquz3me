@@ -24,7 +24,7 @@
 
 <h1 align="center">
     <img width="200" src="./media/art-header.svg" alt="utf8-art">
-    <img width="350" src="./media/header.svg" alt="sphoon">
+    <img width="355" src="./media/header.svg" alt="sphoon">
 </h1>
 
 <!------------------------------------------------------------------------------------->
