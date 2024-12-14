@@ -8,7 +8,7 @@
               font-size: 12pt;
               line-height: 1;
               display: block;
-              color: #dddddd;
+              color:#d4d4d4;
               white-space: pre;
             }
           </style>

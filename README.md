@@ -23,7 +23,7 @@
 
 <!------------------------------------------------------------------------------------->
 <!-- Header -->
-<img src="./media/dark-theme.svg" />
+
 <h1 align="center">
     <img width="200" src="./media/art-header.svg" alt="utf8-art">
     <img width="355" src="./media/header.svg" alt="sphoon">
@@ -78,7 +78,7 @@
 ###
 
 ![Page Views][page-views]
-[![WakaTime Badge][wakatime]]("https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725")
+[![WakaTime][wakatime]](https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725)
 
 <!------------------------------------------------------------------------------------->
 <!-- Footer -->
