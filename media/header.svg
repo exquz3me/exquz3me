@@ -1,0 +1,27 @@
+ 
+    <svg fill="none" viewBox="0 0 317 128" width="317" height="128" xmlns="http://www.w3.org/2000/svg">
+      <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <style>
+            span {
+              font-family: "Consolas";
+              font-size: 12pt;
+              line-height: 1;
+              display: block;
+              color: #ffffff;
+              white-space: pre;
+            }
+          </style>
+  <span>            _                       </span>
+<span>           | |                      </span>
+<span>  ___ _ __ | |__   ___   ___  _ __  </span>
+<span> / __| '_ \| '_ \ / _ \ / _ \| '_ \ </span>
+<span> \__ \ |_) | | | | (_) | (_) | | | |</span>
+<span> |___/ .__/|_| |_|\___/ \___/|_| |_|</span>
+<span>     | |             -- aka exquz3me</span>
+<span>     |_|         </span>
+
+        </div>
+      </foreignObject>
+    </svg>
+  
