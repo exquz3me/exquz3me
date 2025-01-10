@@ -28,8 +28,8 @@
 <!-- Main Area -->
 
 <div align="center" style="display: flex align-items: center;">
-  <img src="https://github-readme-stats.vercel.app/api?username=exquz3me&radius=5&theme=nord&show_icons=true&hide_border=true&count_private=true" height="223" alt="stats graph" />
-  <img src="./media/bad-apple.gif" height="220" alt="bad-apple" style="border-radius: 5px;" />
+  <img src="https://github-readme-stats.vercel.app/api?username=exquz3me&radius=5&theme=nord&show_icons=true&hide_border=true&count_private=true" height="222" alt="stats graph" />
+  <img src="./media/bad-apple.gif" height="222" alt="bad-apple" style="border-radius: 5px;" />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=exquz3me&radius=5&theme=nord&area=true&hide_border=true&order=5" height="265" alt="activity-graph graph" />
   <img src="https://github-profile-trophy.vercel.app?username=exquz3me&radius=5&&theme=nord&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=true&order=4" height="89.2" alt="trophy graph" />
 
