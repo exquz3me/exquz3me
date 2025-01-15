@@ -34,10 +34,8 @@
   <img src="https://github-profile-trophy.vercel.app?username=exquz3me&radius=5&&theme=nord&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=true&order=4" height="89.2" alt="trophy graph" />
 
   <!-- BEGIN YOUTUBE-CARDS -->
-
-  [![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
-
-  <!-- END YOUTUBE-CARDS -->
+[![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
+<!-- END YOUTUBE-CARDS -->
 </div>
 
 ---
