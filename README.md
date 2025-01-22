@@ -5,7 +5,7 @@
   Quick access to profile graphs: https://profile-readme-generator.com/
   Shields: https://shields.io/
   YouTube Cards: https://github.com/DenverCoder1/github-readme-youtube-cards#basic-usage
-  UTF8 Art: http://aa.en.utf8art.com/node/445
+  UTF8 Art: http://aa.en.utf8art.com/
   ASCII Art: https://www.asciiart.eu/
   ASCII Banners: https://patorjk.com/software/taag/
   Unicode Characters: https://www.amp-what.com/
