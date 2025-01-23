@@ -62,13 +62,14 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="docker logo" />
 </div>
 
+<!-- ############################################# -->
+<!-- Footer -->
+
 ###
 
 ![Page Views][page-views]
 [![WakaTime][wakatime]](https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725)
 
-<!-- ############################################# -->
-<!-- Footer -->
 <div align="right">
   <img height="150" src="./media/art-footer.svg" alt="footer" />
 </div>
