@@ -35,8 +35,17 @@
 <!-- ############################################# -->
 <!-- YouTube Video Section -->
 
-<div align="center" style="display: flex align-items: center;">
-  <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 760px; margin: 0 auto;">
+<div align="center">
+  <div align="left" style="max-width: 760px;">
+    <div align="center">
+
+  ![GitHub followers](https://img.shields.io/github/followers/exquz3me?label=Followers&style=flat&logo=github&logoColor=white)
+      [![WakaTime][wakatime]](https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725)
+      ![GitHub last commit](https://img.shields.io/github/last-commit/exquz3me/exquz3me?logo=refinedgithub&logoColor=white)
+      ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube)
+      ![YouTube Subscribers](https://img.shields.io/youtube/channel/subscribers/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube)
+      ![Website](https://img.shields.io/website?url=https%3A%2F%2Fnlobby4.org&style=flat&logo=porkbun&logoColor=white)
+    </div>
 
   <!-- BEGIN YOUTUBE-CARDS -->
   [![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
@@ -71,20 +80,10 @@
         <img width="12" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo" />
     <img width="12" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo" />
-    <img width="12" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo" />
-    <img width="12" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" height="40" alt="ubuntu logo" />
-
-  ![Page Views][page-views]
-  [![WakaTime][wakatime]](https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725)
-
   </div>
 </div>
 
 <!-- ############################################# -->
 <!-- References -->
 
-[page-views]: https://komarev.com/ghpvc/?username=exquz3me&label=Profile%20views&color=0e75b6&style=flat
 [wakatime]: https://wakatime.com/badge/user/163d6b45-39a7-4e5d-8c76-362e0ac68725.svg

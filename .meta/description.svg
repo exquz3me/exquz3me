@@ -29,7 +29,17 @@
         }
       </style>
       
-      <div>
+      <div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto; margin-bottom: 5px;">
+        <code style="width: 100%; white-space: pre; height: 216.5px; font-size: 14px; color: #ffffff; margin-right: 4px; overflow: auto; display: block;">
+            ⢀⣤⣶⣶⣤⣄⡀
+            ⢀⣿⣿⣿⣿⣿⣿⣿⡆    {
+            ⠸⣿⣿⣿⣿⣿⡟⡟⡗    "1337.みんな" : "Personal domain",
+            ⠙⠏⠯⠛⣉⢲⣧⠟    "ɢɪᴛʜᴜʙ" : "My archives and projects",
+            ⠀⠠⢭⣝⣾⠿⣴⣿⠇    "ɴʟᴏʙʙʏ" : "I draw and chat here"
+          ⠀ ⢐⣺⡿⠁⠀⠈⠉    }
+            ⣚⣿⠃
+          ⢀⣿⣿⣿⣷⢒⣢⡀
+        </code>
       </div>
     </div>
   </foreignObject>
