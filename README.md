@@ -27,9 +27,11 @@
 <!--  ############################################# -->
 <!-- Main Area -->
 
-<div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto; margin-bottom: 5px;">
-  <img src="./.meta/description.svg" height="222px" width="538" alt="description" />
-  <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
+<div align="center">
+  <div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto; margin-bottom: 5px;">
+    <img src="./.meta/description.svg" height="222px" width="538" alt="description" />
+    <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
+  </div>
 </div>
 
 <!-- ############################################# -->
@@ -39,7 +41,7 @@
   <div align="left" style="max-width: 760px;">
     <div align="center">
 
-  ![GitHub followers](https://img.shields.io/github/followers/exquz3me?label=Followers&style=flat&logo=github&logoColor=white)
+  ![GitHub followers](https://img.shields.io/github/followers/exquz3me?label=Followers&style=flat)
       [![WakaTime][wakatime]](https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725)
       ![GitHub last commit](https://img.shields.io/github/last-commit/exquz3me/exquz3me?logo=refinedgithub&logoColor=white)
       ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube)
