@@ -20,16 +20,16 @@
 <!-- Header -->
 
 <h1 align="center">
-  <img width="200" src="./media/art-header.svg" alt="art-header" />
-  <img width="355" src="./media/header.svg" alt="header"  />
+  <img width="200" src="./.meta/art-header.svg" alt="art-header" />
+  <img width="355" src="./.meta/header.svg" alt="header"  />
 </h1>
 
-<!-- ############################################# -->
+<!--  ############################################# -->
 <!-- Main Area -->
 
 <div align="center" style="display: flex align-items: center;">
   <img src="https://github-readme-stats.vercel.app/api?username=exquz3me&radius=5&theme=nord&show_icons=true&hide_border=true&count_private=true" height="222" alt="stats graph" />
-  <img src="./media/bad-apple.gif" height="222" alt="bad-apple" />
+  <img src="./.meta/bad-apple.gif" height="222" alt="bad-apple" />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=exquz3me&radius=5&theme=nord&area=true&hide_border=true&order=5" height="265" alt="activity-graph graph" />
   <img src="https://github-profile-trophy.vercel.app?username=exquz3me&radius=5&&theme=nord&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=true&order=4" height="89.2" alt="trophy graph" />
 
@@ -71,7 +71,7 @@
 [![WakaTime][wakatime]](https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725)
 
 <div align="right">
-  <img height="150" src="./media/art-footer.svg" alt="footer" />
+  <img height="150" src="./.meta/art-footer.svg" alt="footer" />
 </div>
 
 <!-- ############################################# -->
