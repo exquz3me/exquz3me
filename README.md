@@ -26,15 +26,6 @@
 
 <!--  ############################################# -->
 <div style="max-width: 760px; display: flex; flex-direction: column; align-items: center; margin: 0 auto;">
-<!--  ############################################# -->
-<!-- Main Area -->
-
-<div align="center">
-  <div style="display: flex; flex-direction: row; align-items: flex-start; margin: 0 auto; margin-bottom: 5px;">
-    <img src="./.meta/description.svg" height="222px" width="538" alt="description" />
-    <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
-  </div>
-</div>
 
 <!--  ############################################# -->
 <!-- Shields -->
@@ -47,7 +38,18 @@
       ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube)
       ![YouTube Subscribers](https://img.shields.io/youtube/channel/subscribers/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube)
       ![Website](https://img.shields.io/website?url=https%3A%2F%2Fnlobby4.org&style=flat&logo=porkbun&logoColor=white)
-    </div>
+</div>
+
+<!--  ############################################# -->
+<!-- Main Area -->
+
+<div align="center">
+  <div style="isplay: flex; flex-direction: row; align-items: flex-start; margin: 0 auto; margin-bottom: 5px; flex-wrap: wrap;">
+    <a href="https://flockmod.com" target="_blank">
+      <img src="./.meta/description.svg" height="222px" width="533" alt="description" />
+    </a>
+    <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
+  </div>
 </div>
 
 <!-- ############################################# -->

@@ -1,46 +1,70 @@
-<svg fill="none" viewBox="0 0 538 222" xmlns="http://www.w3.org/2000/svg">
+<!-- filepath: /home/sphoon/Desktop/Projects/sphoon/exquz3me/.meta/description.svg -->
+<svg fill="none" viewBox="0 0 533 222" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        span {
+        @keyframes loading {
+          0% { opacity: 0.2; }
+          50% { opacity: 1; }
+          100% { opacity: 0.2; }
+        }
+
+        .loading-text {
+          font-family: "MS PGothic", sans-serif;
+          font-size: 24pt;
+          font-weight: bold;
+          color: #F8F9FA;
+          animation: loading 1.5s infinite;
+          text-align: center;
+        }
+
+        .button {
+          margin-top: 20px;
+          padding: 10px 20px;
           font-family: "MS PGothic", sans-serif;
           font-size: 12pt;
-          line-height: 1;
-          display: block;
-          color: #F8F9FA;
-          white-space: pre;
+          color: #FFFFFF;
+          background-color: #007BFF;
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          display: inline-block;
+        }
+
+        .button:hover {
+          background-color: #0056b3;
         }
 
         div {
-          background-color: #212529;
-          padding: 10px;
-          border-radius: 5px;
           width: 100%;
           height: 100%;
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
         }
-
-        @media (prefers-color-scheme: light) {
-          span {
-            color: #6C757D;
-          }
-        }
       </style>
-      
-      <div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto; margin-bottom: 5px;">
-        <code style="width: 100%; white-space: pre; height: 216.5px; font-size: 14px; color: #ffffff; margin-right: 4px; overflow: auto; display: block;">
-            ⢀⣤⣶⣶⣤⣄⡀
-            ⢀⣿⣿⣿⣿⣿⣿⣿⡆    {
-            ⠸⣿⣿⣿⣿⣿⡟⡟⡗    "1337.みんな" : "Personal domain",
-            ⠙⠏⠯⠛⣉⢲⣧⠟    "ɢɪᴛʜᴜʙ" : "My archives and projects",
-            ⠀⠠⢭⣝⣾⠿⣴⣿⠇    "ɴʟᴏʙʙʏ" : "I draw and chat here"
-          ⠀ ⢐⣺⡿⠁⠀⠈⠉    }
-            ⣚⣿⠃
-          ⢀⣿⣿⣿⣷⢒⣢⡀
-        </code>
+
+      <div id="background">
+        <span class="loading-text">flockMod</span>
+        <a href="https://flockmod.com" target="_blank" class="button">Go to flockMod</a>
       </div>
+
+      <script>
+        function getRandomColor() {
+          const letters = '0123456789ABCDEF';
+          let color = '#';
+          for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          return color;
+        }
+
+        // Apply the random color to the background
+        document.getElementById('background').style.backgroundColor = getRandomColor();
+      </script>
     </div>
   </foreignObject>
 </svg>
