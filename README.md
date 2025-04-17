@@ -25,21 +25,21 @@
 </h1>
 
 <!--  ############################################# -->
+<div style="max-width: 760px; display: flex; flex-direction: column; align-items: center; margin: 0 auto;">
+<!--  ############################################# -->
 <!-- Main Area -->
 
 <div align="center">
-  <div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto; margin-bottom: 5px;">
+  <div style="display: flex; flex-direction: row; align-items: flex-start; margin: 0 auto; margin-bottom: 5px;">
     <img src="./.meta/description.svg" height="222px" width="538" alt="description" />
     <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
   </div>
 </div>
 
-<!-- ############################################# -->
-<!-- YouTube Video Section -->
+<!--  ############################################# -->
+<!-- Shields -->
 
 <div align="center">
-  <div align="left" style="max-width: 760px;">
-    <div align="center">
 
   ![GitHub followers](https://img.shields.io/github/followers/exquz3me?label=Followers&style=flat)
       [![WakaTime][wakatime]](https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725)
@@ -48,18 +48,23 @@
       ![YouTube Subscribers](https://img.shields.io/youtube/channel/subscribers/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube)
       ![Website](https://img.shields.io/website?url=https%3A%2F%2Fnlobby4.org&style=flat&logo=porkbun&logoColor=white)
     </div>
+</div>
+
+<!-- ############################################# -->
+<!-- YouTube Video Section -->
+
+<div align="center">
 
   <!-- BEGIN YOUTUBE-CARDS -->
   [![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
   <!-- END YOUTUBE-CARDS -->
-  </div>
 </div>
 
 <!-- ############################################# -->
 <!-- Badges -->
 
-<div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 760px; margin: 0 auto;">
-  <div align="left">
+<div align="center" style="display: flex; flex-direction: column;">
+  <div align="center">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo" />
     <img width="12" />
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" height="40" alt="chrome logo" />
@@ -85,6 +90,8 @@
   </div>
 </div>
 
+<!-- ############################################# -->
+</div>
 <!-- ############################################# -->
 <!-- References -->
 
