@@ -1,0 +1,36 @@
+<svg fill="none" viewBox="0 0 538 222" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        span {
+          font-family: "MS PGothic", sans-serif;
+          font-size: 12pt;
+          line-height: 1;
+          display: block;
+          color: #F8F9FA;
+          white-space: pre;
+        }
+
+        div {
+          background-color: #212529;
+          padding: 10px;
+          border-radius: 5px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        @media (prefers-color-scheme: light) {
+          span {
+            color: #6C757D;
+          }
+        }
+      </style>
+      
+      <div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

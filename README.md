@@ -27,21 +27,9 @@
 <!--  ############################################# -->
 <!-- Main Area -->
 
-<div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto;">
-
-```plaintext
-   ⢀⣤⣶⣶⣤⣄⡀                                                                                                       
-  ⢀⣿⣿⣿⣿⣿⣿⣿⡆   
-  ⠸⣿⣿⣿⣿⣿⡟⡟⡗    
-   ⠙⠏⠯⠛⣉⢲⣧⠟    
-  ⠀⠠⢭⣝⣾⠿⣴⣿⠇    
- ⠀ ⢐⣺⡿⠁⠀⠈⠉    
-  ⣚⣿⠃
-⢀⣿⣿⣿⣷⢒⣢⡀
-
-```
-
-  <img style="margin-left: 3px" src="./.meta/bad-apple.gif" height="221px" alt="bad-apple" />
+<div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto; margin-bottom: 5px;">
+  <img src="./.meta/description.svg" height="222px" width="538" alt="description" />
+  <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
 </div>
 
 <!-- ############################################# -->
