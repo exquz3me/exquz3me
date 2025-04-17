@@ -27,9 +27,10 @@
 <!--  ############################################# -->
 <!-- Main Area -->
 
-<div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto; margin-bottom: 5px;">
-  <code style="width: 100%; white-space: pre; height: 216.5px; font-family: 'Courier New', Courier, monospace; font-size: 14px; color: #ffffff; margin-right: 4px; overflow: auto; display: block;">
-   ⢀⣤⣶⣶⣤⣄⡀    
+<div style="display: flex; flex-direction: row; align-items: flex-start; max-width: 760px; margin: 0 auto;">
+
+```plaintext
+   ⢀⣤⣶⣶⣤⣄⡀                                                                                                       
   ⢀⣿⣿⣿⣿⣿⣿⣿⡆   
   ⠸⣿⣿⣿⣿⣿⡟⡟⡗    
    ⠙⠏⠯⠛⣉⢲⣧⠟    
@@ -37,8 +38,10 @@
  ⠀ ⢐⣺⡿⠁⠀⠈⠉    
   ⣚⣿⠃
 ⢀⣿⣿⣿⣷⢒⣢⡀
-  </code>
-  <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
+
+```
+
+  <img style="margin-left: 3px" src="./.meta/bad-apple.gif" height="221px" alt="bad-apple" />
 </div>
 
 <!-- ############################################# -->
