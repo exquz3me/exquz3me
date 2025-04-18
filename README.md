@@ -19,52 +19,16 @@
 <!-- ############################################# -->
 <!-- Background -->
 <div>
-  <img width="355" src="./.meta/background.svg" alt="header"  />
+  <img width="355" src="./.meta/background.svg" alt="header" />
 </div>
 
 <!-- ############################################# -->
 <!-- Header -->
 
 <h1 align="center">
-  <div style="display: flex; justify-content: center; align-items: stretch;">
-    <kbd style="max-height: 132px; width: 195px;">
-      <pre lang="stl" style="max-height: 100%;">
-solid cube_corner
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 1.0 0.0 0.0
-      vertex 0.0 0.0 1.0
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 0.0 1.0 0.0
-      vertex 1.0 0.0 0.0
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 0.0 0.0 1.0
-      vertex 0.0 1.0 0.0
-    endloop
-  endfacet
-  facet normal 0.577 0.577 0.577
-    outer loop
-      vertex 1.0 0.0 0.0
-      vertex 0.0 1.0 0.0
-      vertex 0.0 0.0 1.0
-    endloop
-  endfacet
-endsolid
-      </pre>
-    </kbd>
-    <img width="355" src="./.meta/header.svg" alt="header" />
-  </div>
+  <img width="222" src="./.meta/art-header.svg" alt="art-header" />
+  <img width="355" src="./.meta/header.svg" alt="header"  />
 </h1>
-
 
 <!--  ############################################# -->
 <div style="max-width: 760px; display: flex; flex-direction: column; align-items: center; margin: 0 auto;">
