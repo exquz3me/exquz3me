@@ -17,17 +17,11 @@
 <!-- .mp4 to .gif: ffmpeg -i input.mp4 -vf "fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif >
 
 <!-- ############################################# -->
-<!-- Background -->
-<div>
-  <img width="355" src="./.meta/background.svg" alt="header" />
-</div>
-
-<!-- ############################################# -->
 <!-- Header -->
 
 <h1 align="center">
   <img width="222" src="./.meta/art-header.svg" alt="art-header" />
-  <img width="355" src="./.meta/header.svg" alt="header"  />
+  <img width="400" src="./.meta/header.svg" alt="header"  />
 </h1>
 
 <!--  ############################################# -->
@@ -61,6 +55,8 @@
 <div align="center">
 
   <!-- BEGIN YOUTUBE-CARDS -->
+  [![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
+  [![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
   [![Bad Apple!! but it's on a public drawing board](https://ytcards.demolab.com/?id=GKq6WVmKizg&title=Bad+Apple%21%21+but+it%27s+on+a+public+drawing+board&lang=en&timestamp=1733980918&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=1&width=250&border_radius=5 "Bad Apple!! but it's on a public drawing board")](https://www.youtube.com/watch?v=GKq6WVmKizg)
   <!-- END YOUTUBE-CARDS -->
 </div>

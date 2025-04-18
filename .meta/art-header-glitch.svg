@@ -1,0 +1,68 @@
+<svg fill="none" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; justify-content: center; align-items: flex-end; width: 100%; height: 100%;">
+      <style>
+        .glitch {
+          color: #ffffff;
+          font-size: 40px;
+          position: relative;
+        }
+
+        @keyframes noise-anim {
+          0% { clip: rect(0, 9999px, 0, 0); }
+          5% { clip: rect(10px, 9999px, 40px, 0); }
+          100% { clip: rect(200px, 9999px, 230px, 0); }
+        }
+
+        .glitch:after {
+          content: attr(data-text);
+          position: absolute;
+          left: 2px;
+          text-shadow: -1px 0 red;
+          top: 0;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-anim 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes noise-anim-2 {
+          0% { clip: rect(0, 9999px, 0, 0); }
+          5% { clip: rect(15px, 9999px, 45px, 0); }
+          100% { clip: rect(195px, 9999px, 235px, 0); }
+        }
+
+        .glitch:before {
+          content: attr(data-text);
+          position: absolute;
+          left: -2px;
+          text-shadow: 1px 0 blue;
+          top: 0;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .glitch,
+          .glitch:before,
+          .glitch:after {
+            color: #fff;
+            background: #0d1117;
+          }
+        }
+
+        @media (prefers-color-scheme: light) {
+          .glitch,
+          .glitch:before,
+          .glitch:after {
+            color: #6C757D;
+            background: #f6f8fa;
+          }
+        }
+      </style>
+      <div class="glitch" data-text="⍰">⍰</div>
+      <div class="glitch" data-text="⍰">⍰</div>
+      <div class="glitch" data-text="⍰">⍰</div>
+    </div>
+  </foreignObject>
+</svg>
