@@ -27,8 +27,8 @@
 
 <h1 align="center">
   <div style="display: flex; justify-content: center; align-items: stretch;">
-    <kbd style="display: flex; align-items: center; max-height: 132px; width: 195px;">
-      <pre lang="stl" style="white-space: pre-wrap; word-wrap: break-word;">
+    <kbd style="max-height: 132px; width: 195px;">
+      <pre lang="stl" style="max-height: 100%;">
 solid cube_corner
   facet normal 0.0 -1.0 0.0
     outer loop
