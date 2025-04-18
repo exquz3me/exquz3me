@@ -25,6 +25,38 @@
 <!-- ############################################# -->
 <!-- Header -->
 
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
+```
 <h1 align="center">
   <img width="222" src="./.meta/art-header.svg" alt="art-header" />
   <img width="355" src="./.meta/header.svg" alt="header"  />
@@ -32,8 +64,6 @@
 
 <!--  ############################################# -->
 <div style="max-width: 760px; display: flex; flex-direction: column; align-items: center; margin: 0 auto;">
-
-
 <!--  ############################################# -->
 <!-- Shields -->
 
@@ -52,9 +82,7 @@
 
 <div align="center">
   <div style="isplay: flex; flex-direction: row; align-items: flex-start; margin: 0 auto; margin-bottom: 5px; flex-wrap: wrap;">
-    <a href="https://flockmod.com" target="_blank">
-      <img src="./.meta/description.svg" height="222px" width="533" alt="description" />
-    </a>
+    <img src="./.meta/description.svg" height="222px" width="533" alt="description" />
     <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
   </div>
 </div>

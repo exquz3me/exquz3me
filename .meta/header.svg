@@ -111,7 +111,7 @@
 
         @media (prefers-color-scheme: light) {
           body {
-            background: #f6f8fa;
+            background: #ffffff;
           }
 
           .glitch {
@@ -121,7 +121,7 @@
           .glitch:before,
           .glitch:after {
             color: #6C757D;
-            background: #f6f8fa;
+            background: #ffffff;
           }
         }
       </style>
