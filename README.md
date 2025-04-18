@@ -26,9 +26,9 @@
 <!-- Header -->
 
 <h1 align="center">
-  <div style="display: flex; justify-content: center; align-items: center;">
-    <kbd width="222">
-      <pre lang="stl">
+  <div style="display: flex; justify-content: center; align-items: stretch;">
+    <kbd style="display: flex; align-items: center; height: 100%; width: 195px;">
+      <pre lang="stl" style="white-space: pre-wrap; word-wrap: break-word;">
 solid cube_corner
   facet normal 0.0 -1.0 0.0
     outer loop
@@ -64,6 +64,7 @@ endsolid
     <img width="355" src="./.meta/header.svg" alt="header" />
   </div>
 </h1>
+
 
 <!--  ############################################# -->
 <div style="max-width: 760px; display: flex; flex-direction: column; align-items: center; margin: 0 auto;">
