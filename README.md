@@ -17,27 +17,34 @@
 <!-- .mp4 to .gif: ffmpeg -i input.mp4 -vf "fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif >
 
 <!-- ############################################# -->
+<!-- Background -->
+<div>
+  <img width="355" src="./.meta/background.svg" alt="header"  />
+</div>
+
+<!-- ############################################# -->
 <!-- Header -->
 
 <h1 align="center">
-  <img width="200" src="./.meta/art-header.svg" alt="art-header" />
+  <img width="222" src="./.meta/art-header.svg" alt="art-header" />
   <img width="355" src="./.meta/header.svg" alt="header"  />
 </h1>
 
 <!--  ############################################# -->
 <div style="max-width: 760px; display: flex; flex-direction: column; align-items: center; margin: 0 auto;">
 
+
 <!--  ############################################# -->
 <!-- Shields -->
 
 <div align="center">
 
-  ![GitHub followers](https://img.shields.io/github/followers/exquz3me?label=Followers&style=flat)
-      [![WakaTime][wakatime]](https://wakatime.com/@163d6b45-39a7-4e5d-8c76-362e0ac68725)
-      ![GitHub last commit](https://img.shields.io/github/last-commit/exquz3me/exquz3me?logo=refinedgithub&logoColor=white)
-      ![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube)
-      ![YouTube Subscribers](https://img.shields.io/youtube/channel/subscribers/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube)
-      ![Website](https://img.shields.io/website?url=https%3A%2F%2Fnlobby4.org&style=flat&logo=porkbun&logoColor=white)
+  ![GitHub Followers][github-followers]
+    ![WakaTime][wakatime]
+    ![Last Commit][github-last-commit]
+    ![YouTube Views][yt-views]
+    ![YouTube Subscribers][yt-subs]
+    [![Website][website-badge]](https://nlobby4.org)
 </div>
 
 <!--  ############################################# -->
@@ -97,4 +104,9 @@
 <!-- ############################################# -->
 <!-- References -->
 
+[github-followers]: https://img.shields.io/github/followers/exquz3me?label=Followers&style=flat
 [wakatime]: https://wakatime.com/badge/user/163d6b45-39a7-4e5d-8c76-362e0ac68725.svg
+[github-last-commit]: https://img.shields.io/github/last-commit/exquz3me/exquz3me?logo=refinedgithub&logoColor=white
+[yt-views]: https://img.shields.io/youtube/channel/views/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube
+[yt-subs]: https://img.shields.io/youtube/channel/subscribers/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube
+[website-badge]: https://img.shields.io/website?url=https%3A%2F%2Fnlobby4.org&style=flat&logo=porkbun&logoColor=white

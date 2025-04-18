@@ -1,4 +1,3 @@
- 
 <svg fill="none" viewBox="0 0 346 128" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
@@ -13,21 +12,128 @@
           font-weigth: bold;
         }
 
+        .glitch {
+          color: #ffffff;
+          position: relative;
+          width: 400px;
+          margin: 0 auto;
+        }
+
+        @keyframes noise-anim {
+          0% { clip: rect(0, 9999px, 0, 0); }
+          5% { clip: rect(10px, 9999px, 40px, 0); }
+          10% { clip: rect(20px, 9999px, 60px, 0); }
+          15% { clip: rect(30px, 9999px, 50px, 0); }
+          20% { clip: rect(40px, 9999px, 70px, 0); }
+          25% { clip: rect(50px, 9999px, 90px, 0); }
+          30% { clip: rect(60px, 9999px, 80px, 0); }
+          35% { clip: rect(70px, 9999px, 100px, 0); }
+          40% { clip: rect(80px, 9999px, 110px, 0); }
+          45% { clip: rect(90px, 9999px, 120px, 0); }
+          50% { clip: rect(100px, 9999px, 130px, 0); }
+          55% { clip: rect(110px, 9999px, 140px, 0); }
+          60% { clip: rect(120px, 9999px, 150px, 0); }
+          65% { clip: rect(130px, 9999px, 160px, 0); }
+          70% { clip: rect(140px, 9999px, 170px, 0); }
+          75% { clip: rect(150px, 9999px, 180px, 0); }
+          80% { clip: rect(160px, 9999px, 190px, 0); }
+          85% { clip: rect(170px, 9999px, 200px, 0); }
+          90% { clip: rect(180px, 9999px, 210px, 0); }
+          95% { clip: rect(190px, 9999px, 220px, 0); }
+          100% { clip: rect(200px, 9999px, 230px, 0); }
+        }
+
+        .glitch:after {
+          content: attr(data-text);
+          position: absolute;
+          left: 2px;
+          text-shadow: -1px 0 red;
+          top: 0;
+          color: #ffffff;
+          background: black;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-anim 2s infinite linear alternate-reverse;
+        }
+
+        @keyframes noise-anim-2 {
+          0% { clip: rect(0, 9999px, 0, 0); }
+          5% { clip: rect(15px, 9999px, 45px, 0); }
+          10% { clip: rect(25px, 9999px, 70px, 0); }
+          15% { clip: rect(5px, 9999px, 30px, 0); }
+          20% { clip: rect(35px, 9999px, 75px, 0); }
+          25% { clip: rect(45px, 9999px, 85px, 0); }
+          30% { clip: rect(55px, 9999px, 95px, 0); }
+          35% { clip: rect(65px, 9999px, 105px, 0); }
+          40% { clip: rect(75px, 9999px, 115px, 0); }
+          45% { clip: rect(85px, 9999px, 125px, 0); }
+          50% { clip: rect(95px, 9999px, 135px, 0); }
+          55% { clip: rect(105px, 9999px, 145px, 0); }
+          60% { clip: rect(115px, 9999px, 155px, 0); }
+          65% { clip: rect(125px, 9999px, 165px, 0); }
+          70% { clip: rect(135px, 9999px, 175px, 0); }
+          75% { clip: rect(145px, 9999px, 185px, 0); }
+          80% { clip: rect(155px, 9999px, 195px, 0); }
+          85% { clip: rect(165px, 9999px, 205px, 0); }
+          90% { clip: rect(175px, 9999px, 215px, 0); }
+          95% { clip: rect(185px, 9999px, 225px, 0); }
+          100% { clip: rect(195px, 9999px, 235px, 0); }
+        }
+
+        .glitch:before {
+          content: attr(data-text);
+          position: absolute;
+          left: -2px;
+          text-shadow: 1px 0 blue;
+          top: 0;
+          color: #ffffff;
+          background: black;
+          overflow: hidden;
+          clip: rect(0, 900px, 0, 0);
+          animation: noise-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          body {
+            background: #0d1117;
+          }
+
+          .glitch {
+            color: #ffffff;
+          }
+
+          .glitch:before,
+          .glitch:after {
+            color: #ffffff;
+            background: #0d1117;
+          }
+        }
+
         @media (prefers-color-scheme: light) {
-          span {
+          body {
+            background: #f6f8fa;
+          }
+
+          .glitch {
             color: #6C757D;
+          }
+
+          .glitch:before,
+          .glitch:after {
+            color: #6C757D;
+            background: #f6f8fa;
           }
         }
       </style>
 
-      <span>                                    </span>
-      <span>            _                       </span>
-      <span>  ___ _ __ | |__   ___   ___  _ __  </span>
-      <span> / __| &#039;_ \| &#039;_ \ / _ \ / _ \| &#039;_ \ </span>
-      <span> \__ \ |_) | | | | (_) | (_) | | | |</span>
-      <span> |___/ .__/|_| |_|\___/ \___/|_| |_|</span>
-      <span>     |_|           -- aka. exquz3me </span>
-      <span>                                    </span>
+      <span class="glitch" data-text="                                     ">                                     </span>
+      <span class="glitch" data-text="            _                       ">            _                       </span>
+      <span class="glitch" data-text="  ___ _ __ | |__   ___   ___  _ __  ">  ___ _ __ | |__   ___   ___  _ __  </span>
+      <span class="glitch" data-text=" / __| &#039;_ \| &#039;_ \ / _ \ / _ \| &#039;_ \ "> / __| &#039;_ \| &#039;_ \ / _ \ / _ \| &#039;_ \ </span>
+      <span class="glitch" data-text=" \__ \ |_) | | | | (_) | (_) | | | |"> \__ \ |_) | | | | (_) | (_) | | | |</span>
+      <span class="glitch" data-text=" |___/ .__/|_| |_|\___/ \___/|_| |_|"> |___/ .__/|_| |_|\___/ \___/|_| |_|</span>
+      <span class="glitch" data-text="     |_|           -- aka. exquz3me ">     |_|           -- aka. exquz3me </span>
+      <span class="glitch" data-text="                                    ">                                    </span>
     </div>
   </foreignObject>
 </svg>

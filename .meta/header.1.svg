@@ -1,0 +1,33 @@
+ 
+<svg fill="none" viewBox="0 0 346 128" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        span {
+          font-family: "Courier New";
+          font-size: 12pt;
+          line-height: 1;
+          display: block;
+          color: #F8F9FA;
+          white-space: pre;
+          font-weigth: bold;
+        }
+
+        @media (prefers-color-scheme: light) {
+          span {
+            color: #6C757D;
+          }
+        }
+      </style>
+
+      <span>                                    </span>
+      <span>            _                       </span>
+      <span>  ___ _ __ | |__   ___   ___  _ __  </span>
+      <span> / __| &#039;_ \| &#039;_ \ / _ \ / _ \| &#039;_ \ </span>
+      <span> \__ \ |_) | | | | (_) | (_) | | | |</span>
+      <span> |___/ .__/|_| |_|\___/ \___/|_| |_|</span>
+      <span>     |_|           -- aka. exquz3me </span>
+      <span>                                    </span>
+    </div>
+  </foreignObject>
+</svg>
