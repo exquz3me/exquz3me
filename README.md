@@ -25,7 +25,11 @@
 <!-- ############################################# -->
 <!-- Header -->
 
-```stl
+<h1 align="center">
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <blockquote width="222">
+      <kbd>
+        <pre lang="stl">
 solid cube_corner
   facet normal 0.0 -1.0 0.0
     outer loop
@@ -56,10 +60,11 @@ solid cube_corner
     endloop
   endfacet
 endsolid
-```
-<h1 align="center">
-  <img width="222" src="./.meta/art-header.svg" alt="art-header" />
-  <img width="355" src="./.meta/header.svg" alt="header"  />
+        </pre>
+      </kbd>
+    </blockquote>
+    <img width="355" src="./.meta/header.svg" alt="header" />
+  </div>
 </h1>
 
 <!--  ############################################# -->
