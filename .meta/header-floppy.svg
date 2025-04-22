@@ -1,0 +1,83 @@
+<svg fill="none" viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+  <foreignObject width="100%" height="100%" style="overflow: visible;">
+    <div xmlns="http://www.w3.org/1999/xhtml"
+         style="position: relative; font-family: 'Courier New'; font-size: 12pt; line-height: 1; font-weight: bold; transform: rotate(-12deg); transform-origin: center; margin: 50px;">
+      <style>
+        .layered {
+          position: relative;
+          display: block;
+          white-space: pre;
+          color: #212529;
+          animation: float 3s ease-in-out infinite;
+        }
+
+        .layered:nth-child(even) {
+          animation-delay: 0.15s;
+        }
+
+        .layered:nth-child(odd) {
+          animation-delay: 0.3s;
+        }
+
+        .layered::before,
+        .layered::after {
+          content: attr(data-text);
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          color: rgba(0, 0, 0, 0.2);
+          z-index: -1;
+        }
+
+        .layered::after {
+          left: 4px;
+          top: 4px;
+          color: rgba(0, 0, 0, 0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .layered {
+            color: #F8F9FA;
+          }
+
+          .layered::before {
+            color: rgba(255, 255, 255, 0.2);
+          }
+
+          .layered::after {
+            color: rgba(255, 255, 255, 0.1);
+          }
+        }
+
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-2px);
+          }
+        }
+      </style>
+
+      <span class="layered" data-text=" ___________________________."> ___________________________.</span>
+      <span class="layered" data-text="|;;|                     |;;||">|;;|                     |;;||</span>
+      <span class="layered" data-text="|[]|---------------------|[]||">|[]|---------------------|[]||</span>
+      <span class="layered" data-text="|;;|                     |;;||">|;;|                     |;;||</span>
+      <span class="layered" data-text="|;;|                     |;;||">|;;|                     |;;||</span>
+      <span class="layered" data-text="|;;|                     |;;||">|;;|   every one is      |;;||</span>
+      <span class="layered" data-text="|;;|                     |;;||">|;;|       CONNECTED     |;;||</span>
+      <span class="layered" data-text="|;;|                     |;;||">|;;|                     |;;||</span>
+      <span class="layered" data-text="|;;|_____________________|;;||">|;;|_____________________|;;||</span>
+      <span class="layered" data-text="|;;;;;;;;;;;;;;;;;;;;;;;;;;;||">|;;;;;;;;;;;;;;;;;;;;;;;;;;;||</span>
+      <span class="layered" data-text="|;;;;;;_______________ ;;;;;||">|;;;;;;_______________ ;;;;;||</span>
+      <span class="layered" data-text="|;;;;;|  ___          |;;;;;||">|;;;;;|  ___          |;;;;;||</span>
+      <span class="layered" data-text="|;;;;;| |;;;|         |;;;;;||">|;;;;;| |;;;|         |;;;;;||</span>
+      <span class="layered" data-text="|;;;;;| |;;;|         |;;;;;||">|;;;;;| |;;;|         |;;;;;||</span>
+      <span class="layered" data-text="|;;;;;| |;;;|         |;;;;;||">|;;;;;| |;;;|         |;;;;;||</span>
+      <span class="layered" data-text="|;;;;;| |;;;|         |;;;;;||">|;;;;;| |;;;|         |;;;;;||</span>
+      <span class="layered" data-text="|;;;;;| |___|         |;;;;;||">|;;;;;| |___|         |;;;;;||</span>
+      <span class="layered" data-text="\_____|_______________|_____||">\_____|_______________|_____||</span>
+      <span class="layered" data-text=" ~~~~~^^^^^^^^^^^^^^^^^~~~~~~"> ~~~~~^^^^^^^^^^^^^^^^^~~~~~~</span>
+    </div>
+  </foreignObject>
+</svg>

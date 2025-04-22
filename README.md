@@ -20,7 +20,7 @@
 <!-- Header -->
 
 <h1 align="center">
-  <img width="222" src="./.meta/art-header.svg" alt="art-header" />
+  <img width="152" src="./.meta/header-floppy.svg" alt="art-header" />
   <img width="400" src="./.meta/header.svg" alt="header"  />
 </h1>
 
@@ -31,21 +31,21 @@
 
 <div align="center">
 
-  ![GitHub Followers][github-followers]
-    ![WakaTime][wakatime]
-    ![Last Commit][github-last-commit]
-    ![YouTube Views][yt-views]
+  ![YouTube Views][yt-views]
     ![YouTube Subscribers][yt-subs]
+    ![Last Commit][github-last-commit]
     [![Website][website-badge]](https://nlobby4.org)
+    ![GitHub Followers][github-followers]
+    ![WakaTime][wakatime]
 </div>
 
 <!--  ############################################# -->
 <!-- Main Area -->
 
 <div align="center">
-  <div style="isplay: flex; flex-direction: row; align-items: flex-start; margin: 0 auto; margin-bottom: 5px; flex-wrap: wrap;">
-    <img src="./.meta/description.svg" height="222px" width="533" alt="description" />
-    <img src="./.meta/bad-apple.gif" height="222px" alt="bad-apple" />
+  <div style="isplay: flex; flex-direction: row; align-items: center; margin: 0 auto; margin-bottom: 5px; flex-wrap: wrap;">
+    <img src="./.meta/description.svg" height="222px" width="495" alt="description" />
+    <img src="./.meta/clippy.svg" height="180px" alt="bad-apple" />
   </div>
 </div>
 
@@ -94,9 +94,9 @@
 <!-- ############################################# -->
 <!-- References -->
 
-[github-followers]: https://img.shields.io/github/followers/exquz3me?label=Followers&style=flat
-[wakatime]: https://wakatime.com/badge/user/163d6b45-39a7-4e5d-8c76-362e0ac68725.svg
-[github-last-commit]: https://img.shields.io/github/last-commit/exquz3me/exquz3me?logo=refinedgithub&logoColor=white
 [yt-views]: https://img.shields.io/youtube/channel/views/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube
 [yt-subs]: https://img.shields.io/youtube/channel/subscribers/UCM217JhNPpu5J4iMsc8WD1g?style=flat&logo=youtube
+[github-last-commit]: https://img.shields.io/github/last-commit/exquz3me/exquz3me?logo=refinedgithub&logoColor=white
 [website-badge]: https://img.shields.io/website?url=https%3A%2F%2Fnlobby4.org&style=flat&logo=porkbun&logoColor=white
+[github-followers]: https://img.shields.io/github/followers/exquz3me?style=flat&logo=github
+[wakatime]: https://wakatime.com/badge/user/163d6b45-39a7-4e5d-8c76-362e0ac68725.svg

@@ -1,73 +1,74 @@
-<!-- filepath: /home/sphoon/Desktop/Projects/sphoon/exquz3me/.meta/description.svg -->
-<svg fill="none" viewBox="0 0 538 222" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 547 222" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml"
+       style="position: relative; font-family: 'Courier New'; font-size: 12pt; line-height: 1; font-weight: bold;">
       <style>
-        @keyframes loading {
-          0% { opacity: 0.2; }
-          50% { opacity: 1; }
-          100% { opacity: 0.2; }
+      .layered {
+        position: relative;
+        display: block;
+        white-space: pre;
+        color: #212529;
+      }
+
+      .layered::before,
+      .layered::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        color: rgba(0, 0, 0, 0.2);
+        z-index: -1;
+      }
+
+      .layered::after {
+        left: 4px;
+        top: 4px;
+        color: rgba(0, 0, 0, 0.1);
+      }
+
+      .jitter {
+        display: inline-block;
+        animation: jitter 0.3s infinite;
+        color: #007bff; /* Blue color for flockMod */
+      }
+
+      @keyframes jitter {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-2px); }
+        50% { transform: translateX(2px); }
+        75% { transform: translateX(-2px); }
+        100% { transform: translateX(0); }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .layered {
+        color: #F8F9FA;
         }
 
-        .loading-text {
-          font-family: "MS PGothic", sans-serif;
-          font-size: 24pt;
-          font-weight: bold;
-          color: #F8F9FA;
-          animation: loading 1.5s infinite;
-          text-align: center;
+        .layered::before {
+        color: rgba(255, 255, 255, 0.2);
         }
 
-        .button {
-          margin-top: 20px;
-          padding: 10px 20px;
-          font-family: "MS PGothic", sans-serif;
-          font-size: 12pt;
-          color: #FFFFFF;
-          background-color: #007BFF;
-          border: none;
-          border-radius: 5px;
-          text-align: center;
-          text-decoration: none;
-          cursor: pointer;
-          display: inline-block;
+        .layered::after {
+        color: rgba(255, 255, 255, 0.1);
         }
-
-        .button:hover {
-          background-color: #0056b3;
-        }
-
-        div {
-          background-color: #212529;
-          padding: 10px;
-          border-radius: 5px;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-        }
-
-        @media (prefers-color-scheme: light) {
-          .loading-text {
-            color: #6C757D;
-          }
-
-          .button {
-            background-color: #6C757D;
-          }
-
-          .button:hover {
-            background-color: #5A6268;
-          }
-        }
+      }
       </style>
 
-      <div>
-        <span class="loading-text">flockMod</span>
-        <a href="https://flockmod.com" target="_blank" class="button">Go to flockMod</a>
-      </div>
+      <span class="layered">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┃ Welcome to my profile                                 ┃</span>
+      <span class="layered">┃ I can be found on <span class="jitter">flockMod</span> in the nlobby4 room        ┃</span>
+      <span class="layered">┃───────────────────────────────────────────────────────┃</span>
+      <span class="layered">┃ I'm currently working on modifying a collaborative    ┃</span>
+      <span class="layered">┃ drawing platform named <span class="jitter">flockMod</span>.                      ┃</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┃ Check out the nlobby4 organization for more           ┃</span>
+      <span class="layered">┃ information.                                          ┃</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛</span>
     </div>
   </foreignObject>
 </svg>
