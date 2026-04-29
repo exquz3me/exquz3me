@@ -1,0 +1,30 @@
+{
+  "[git-commit]": {
+    "editor.rulers": [72, 100],
+    "editor.wordWrap": "wordWrapColumn",
+    "workbench.editor.restoreViewState": false
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  "[markdown]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on"
+  },
+  "editor.detectIndentation": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.formatOnType": false,
+  "editor.rulers": [80],
+  "files.associations": {
+    ".gitmessage": "ignore",
+    ".mailmap": "properties",
+    "AUTHORS": "properties",
+    "CODEOWNERS": "properties",
+    "LICENSE": "plaintext"
+  },
+  "files.autoSave": "off"
+}

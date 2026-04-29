@@ -1,0 +1,12 @@
+# --------------------------------------------------
+# Git author/email normalization file.
+#
+# This file maps various author names and email addresses
+# to a single canonical name and email. This helps unify
+# commit history when contributors have used different
+# names or emails in their commits.
+#
+# Add your project-specific settings below.
+# --------------------------------------------------
+
+# Canonical Name <canonical@email.com> [Old Name <old@email.com>]

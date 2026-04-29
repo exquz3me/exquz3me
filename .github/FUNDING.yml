@@ -1,0 +1,9 @@
+# --------------------------------------------------
+# This file is used to enable GitHub Sponsors.
+#
+# For more information, see:
+# https://github.com/open-source/sponsors
+# --------------------------------------------------
+
+# yaml-language-server: $schema=https://json.schemastore.org/github-funding.json
+custom: https://paypal.me/nlobby4

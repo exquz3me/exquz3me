@@ -1,0 +1,31 @@
+# --------------------------------------------------
+# Generic attributes and settings for the repository.
+#
+# This file defines attributes for files in the repository,
+# such as line ending normalization and Git LFS settings.
+#
+# For more information, see:
+# https://git-lfs.com/
+# https://git-scm.com/docs/gitattributes#_end_of_line_conversion
+# --------------------------------------------------
+
+* text=auto
+
+# For the following file types, normalize line endings to LF on
+# check-in and prevent conversion to CRLF when they are checked out
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Force batch scripts to always use CRLF line endings so that if a repo is accessed
+# in Windows via a file share from Linux, the scripts will work.
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ics text eol=crlf
+*.ps1 text eol=crlf
+
+# Force bash scripts to always use LF line endings so that if a repo is accessed
+# in Unix via a file share from Windows, the scripts will work.
+*.sh text eol=lf

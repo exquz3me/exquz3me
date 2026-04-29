@@ -1,0 +1,13 @@
+# --------------------------------------------------
+# Commit blame ignore list.
+#
+# This file lists commits that are not useful for `git blame`,
+# such as mass formatting or file renaming changes.
+#
+# To use this file as the default ignore list for blame,
+# run the setup script or set the following git configuration:
+#
+# git config blame.ignoreRevsFile .git-blame-ignore-revs
+# --------------------------------------------------
+
+# <revision number>: [Type][Label] Description

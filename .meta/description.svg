@@ -1,0 +1,74 @@
+<svg fill="none" viewBox="0 0 547 222" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml"
+       style="position: relative; font-family: 'Courier New'; font-size: 12pt; line-height: 1; font-weight: bold;">
+      <style>
+      .layered {
+        position: relative;
+        display: block;
+        white-space: pre;
+        color: #212529;
+      }
+
+      .layered::before,
+      .layered::after {
+        content: attr(data-text);
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        color: rgba(0, 0, 0, 0.2);
+        z-index: -1;
+      }
+
+      .layered::after {
+        left: 4px;
+        top: 4px;
+        color: rgba(0, 0, 0, 0.1);
+      }
+
+      .jitter {
+        display: inline-block;
+        animation: jitter 0.3s infinite;
+        color: #007bff; /* Blue color for flockMod */
+      }
+
+      @keyframes jitter {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-2px); }
+        50% { transform: translateX(2px); }
+        75% { transform: translateX(-2px); }
+        100% { transform: translateX(0); }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .layered {
+        color: #F8F9FA;
+        }
+
+        .layered::before {
+        color: rgba(255, 255, 255, 0.2);
+        }
+
+        .layered::after {
+        color: rgba(255, 255, 255, 0.1);
+        }
+      }
+      </style>
+
+      <span class="layered">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┃ Welcome to my profile                                 ┃</span>
+      <span class="layered">┃ I can be found on <span class="jitter">flockMod</span> in the nlobby4 room        ┃</span>
+      <span class="layered">┃───────────────────────────────────────────────────────┃</span>
+      <span class="layered">┃ I'm currently working on modifying a collaborative    ┃</span>
+      <span class="layered">┃ drawing platform named <span class="jitter">flockMod</span>.                      ┃</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┃ Check out the nlobby4 organization for more           ┃</span>
+      <span class="layered">┃ information.                                          ┃</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┃                                                       ┃</span>
+      <span class="layered">┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛</span>
+    </div>
+  </foreignObject>
+</svg>
