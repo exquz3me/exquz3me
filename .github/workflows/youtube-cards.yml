@@ -1,7 +1,7 @@
-name: GitHub Readme YouTube Cards
+name: YouTube Cards
 on:
   schedule:
-    - cron: "0 0 1 * *" # Runs on the first day of every month at 00:00 UTC
+    - cron: "0 0 1 * *"
   workflow_dispatch:
 
 jobs:
@@ -14,10 +14,9 @@ jobs:
     steps:
       - uses: DenverCoder1/github-readme-youtube-cards@main
         with:
+          channel_id: UCM217JhNPpu5J4iMsc8WD1g
           playlist_id: PL_y8zv_VZkddeuSuJgQo7m6cGYVBXBgFL
-          youtube_api_key: ${{ secrets.YOUTUBE_API_KEY }}
           max_videos: 6
-          show_duration: true
-          commit_message: "Update YouTube cards"
+          commit_message: "docs: update YouTube cards"
           theme_context_light: '{ "background_color": "#ffffff", "title_color": "#24292f", "stats_color": "#57606a" }'
           theme_context_dark: '{ "background_color": "#0d1117", "title_color": "#ffffff", "stats_color": "#dedede" }'
