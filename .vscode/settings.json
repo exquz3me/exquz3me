@@ -11,7 +11,7 @@
   },
   "[markdown]": {
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "off"
   },
   "editor.detectIndentation": false,
   "editor.formatOnPaste": false,
