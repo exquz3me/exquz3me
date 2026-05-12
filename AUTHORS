@@ -1,12 +1,14 @@
 # --------------------------------------------------
-# List of contributors
+# List of participating organization members
 #
-# This file contains the canonical list of all contributors
-# to the project. The name and email should match the canonical
-# identity defined in the .mailmap file.
+# This file contains the canonical list of the organization members
+# that are maintaining the project currently or were maintaining it in the past.
+# The name and email should match the canonical identity defined in the .mailmap
+# file.
 #
-# Add new contributors below.
+# Add new maintainers below.
 # --------------------------------------------------
 
 # Canonical Name <canonical@email.com> (URL)
+
 sphoon <sphoon@nlobby4.org> (https://nlobby4.org)
