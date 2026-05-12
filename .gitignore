@@ -10,8 +10,7 @@
 #
 # We use a deny-by-default approach for the repository root which
 # avoids any unwanted auto-generated files from being accidentally
-# committed to the repository. The project directory contains its
-# own .gitignore file that is based on the classic blacklist approach.
+# committed to the repository.
 #
 # Add files and paths to be tracked by git by adding exceptions:
 #
