@@ -1,3 +1,11 @@
+# --------------------------------------------------
+# YouTube Cards Workflow
+#
+# This workflow updates the YouTube cards in the README file on a monthly basis.
+# --------------------------------------------------
+
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+
 name: YouTube Cards
 on:
   schedule:
