@@ -1,5 +1,5 @@
 # --------------------------------------------------
-# Generic git ignore list.
+# Deny by default git ignore list.
 #
 # This file lists files and patterns that should
 # not be tracked by git.
@@ -8,86 +8,32 @@
 # tooling and other processes that rely on git to determine
 # which files are part of the project.
 #
-# Add your project-specific settings at the end of this file.
+# We use a deny-by-default approach for the repository root which
+# avoids any unwanted auto-generated files from being accidentally
+# committed to the repository. The project directory contains its
+# own .gitignore file that is based on the classic blacklist approach.
+#
+# Add files and paths to be tracked by git by adding exceptions:
+#
+# Add specific file:                        !path/to/file
+# Add all files in a directory:             !path/to/directory/
+# Add all files in a directory recursively: !path/to/directory/**
 # --------------------------------------------------
 
-# OS-generated files
-.DS_Store
-.DS_Store?
-Thumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-.Spotlight-V100/
-.Trashes/
-._*
-.AppleDouble/
+# Deny by default
+*
 
-# IDE & editor files
-.vscode-test/
-.idea/
-.fleet/
-.zed/
-.vs/
-.project
-.classpath
-.settings/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sln.docstates
-*.user
-*.userosscache
-*.iml
-*.sw?
-*.swp
-*.swo
-*~
-.#*
-.netrwhist
-.nvimlog
-.emacs.desktop
-.emacs.desktop.lock
-*.sublime-project
-*.sublime-workspace
-*.code-search
-*.code-search-index
-*.code-search-cache
-*.code-search-cache-*
-*.code-search-index-*
+# Allow directory traversal
+!*/
 
-# Environment & secrets
-.env
-.env.*
-!.env.example
-*.local
-*.secret
-*.key
-*.pem
-*.crt
-*.pfx
-*.p12
-secrets/
-credentials/
-
-# Logs & runtime files
-*.log
-*.log.*
-*.out
-logs/
-*.pid
-*.seed
-*.pid.lock
-*.err
-*.stackdump
-.cache/
-
-# Miscellaneous
-*.bak
-*.tmp
-*.temp
-*.orig
-*.rej
-*.sav
-
-# Project rules
+# Allow specific root-level files and directories
+!.github/**
+!.vscode/**
+!meta/**
+!.editorconfig
+!.git-blame-ignore-revs
+!.gitattributes
+!.gitignore
+!.mailmap
+!AUTHORS
+!README.md
