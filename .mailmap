@@ -6,7 +6,16 @@
 # commit history when contributors have used different
 # names or emails in their commits.
 #
-# Add your project-specific settings below.
+# Please consider using the private git email provided by GitHub to avoid
+# exposing your personal email address in the commit history. You can find it in
+# your GitHub account email settings by enabling "Keep my email address private"
+# and then setting the provided email in git  and configuring it as your primary
+# GitHub email:
+#
+# https://github.com/settings/emails
+# https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address
 # --------------------------------------------------
 
 # Canonical Name <canonical@email.com> [Old Name <old@email.com>]
+
+sphoon <sphoon@nlobby4.org> exquz3me <105126696+exquz3me@users.noreply.github.com>
