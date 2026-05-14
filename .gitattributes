@@ -2,30 +2,119 @@
 # Generic attributes and settings for the repository.
 #
 # This file defines attributes for files in the repository,
-# such as line ending normalization and Git LFS settings.
+# such as line ending normalization, Git LFS settings,
+# and diff drivers for specific file types. It helps ensure
+# consistent handling of files across different platforms.
+# A pattern that does not contain a slash matches by basename
+# in any directory.
+#
+# Files can be ignored from GitHub source zip downloads
+# by using the `export-ignore` attribute.
 #
 # For more information, see:
 # https://git-lfs.com/
 # https://git-scm.com/docs/gitattributes#_end_of_line_conversion
+# https://github.com/gitattributes/gitattributes
+# https://richienb.github.io/gitattributes-generator/
 # --------------------------------------------------
 
-* text=auto
+# --------------------------------------------------
+# Common Rules
+# --------------------------------------------------
 
-# For the following file types, normalize line endings to LF on
-# check-in and prevent conversion to CRLF when they are checked out
-*.json text eol=lf
-*.md text eol=lf
-*.txt text eol=lf
-*.yml text eol=lf
-*.yaml text eol=lf
+# Auto detect text files and perform LF normalization
+*          text=auto
 
-# Force batch scripts to always use CRLF line endings so that if a repo is accessed
-# in Windows via a file share from Linux, the scripts will work.
-*.cmd text eol=crlf
-*.bat text eol=crlf
-*.ics text eol=crlf
-*.ps1 text eol=crlf
+# Text files where line endings should be preserved
+*.patch    -text
 
-# Force bash scripts to always use LF line endings so that if a repo is accessed
-# in Unix via a file share from Windows, the scripts will work.
-*.sh text eol=lf
+# Scripts
+*.bat      text eol=crlf
+*.cmd      text eol=crlf
+*.ps1      text eol=crlf
+*.bash     text eol=lf
+*.fish     text eol=lf
+*.ksh      text eol=lf
+*.sh       text eol=lf
+*.zsh      text eol=lf
+
+# Documents
+*.bibtex   text diff=bibtex
+*.doc      diff=astextplain
+*.DOC      diff=astextplain
+*.docx     diff=astextplain
+*.DOCX     diff=astextplain
+*.dot      diff=astextplain
+*.DOT      diff=astextplain
+*.pdf      diff=astextplain
+*.PDF      diff=astextplain
+*.rtf      diff=astextplain
+*.RTF      diff=astextplain
+*.md       text diff=markdown
+*.mdx      text diff=markdown
+*.tex      text diff=tex
+*.adoc     text
+*.textile  text
+*.mustache text
+*.csv      text eol=crlf
+*.tab      text
+*.tsv      text
+*.txt      text
+*.sql      text
+*.epub     diff=astextplain
+
+# Graphics
+*.png      binary
+*.jpg      binary
+*.jpeg     binary
+*.gif      binary
+*.tif      binary
+*.tiff     binary
+*.ico      binary
+*.svg      binary
+*.eps      binary
+
+# Serialization
+*.json     text
+*.toml     text
+*.xml      text
+*.yaml     text
+*.yml      text
+
+# Archives
+*.7z       binary
+*.bz       binary
+*.bz2      binary
+*.bzip2    binary
+*.gz       binary
+*.lz       binary
+*.lzma     binary
+*.rar      binary
+*.tar      binary
+*.taz      binary
+*.tbz      binary
+*.tbz2     binary
+*.tgz      binary
+*.tlz      binary
+*.txz      binary
+*.xz       binary
+*.Z        binary
+*.zip      binary
+*.zst      binary
+
+# --------------------------------------------------
+# Custom Rules
+# --------------------------------------------------
+
+# Exclude files from exports and source archives
+.gitignore             text eol=lf export-ignore
+.gitattributes         text eol=lf export-ignore
+.gitkeep               text eol=lf export-ignore
+.git-blame-ignore-revs text eol=lf export-ignore
+.mailmap               text eol=lf export-ignore
+
+# Repository specific files
+.github/CODEOWNERS     text eol=lf
+.editorconfig          text eol=lf
+AUTHORS                text eol=lf
+LICENSE                text eol=lf
