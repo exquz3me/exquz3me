@@ -26,13 +26,13 @@
 !*/
 
 # Allow specific root-level files and directories
-!.github/**
-!.vscode/**
-!meta/**
-!.editorconfig
-!.git-blame-ignore-revs
-!.gitattributes
-!.gitignore
-!.mailmap
-!AUTHORS
-!README.md
+!/.github/**
+!/.vscode/**
+!/meta/**
+!/.editorconfig
+!/.git-blame-ignore-revs
+!/.gitattributes
+!/.gitignore
+!/.mailmap
+!/AUTHORS
+!/README.md
