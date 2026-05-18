@@ -5,6 +5,7 @@
 # such as line ending normalization, Git LFS settings,
 # and diff drivers for specific file types. It helps ensure
 # consistent handling of files across different platforms.
+#
 # A pattern that does not contain a slash matches by basename
 # in any directory.
 #
