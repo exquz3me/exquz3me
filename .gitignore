@@ -1,22 +1,28 @@
 # --------------------------------------------------
-# Deny by default git ignore list.
+# Allowlist git ignore file.
 #
-# This file lists files and patterns that should
-# not be tracked by git.
+# This file uses a deny-by-default approach so all files
+# are ignored unless explicitly allowed via exceptions.
+#
+# This avoids any unwanted auto-generated files from being
+# accidentally committed to the repository. The project
+# directory contains its own .gitignore file that uses the
+# classic denylist approach.
 #
 # By extension this file is used to exclude files from
 # tooling and other processes that rely on git to determine
 # which files are part of the project.
 #
-# We use a deny-by-default approach for the repository root which
-# avoids any unwanted auto-generated files from being accidentally
-# committed to the repository.
+# Add files and paths to be tracked by git by adding exceptions,
+# keep in mind to allow starting from the repository root to avoid
+# allowing files provided by dependencies.
 #
-# Add files and paths to be tracked by git by adding exceptions:
+# Add specific file:                        !/path/to/file
+# Add all files in a directory:             !/path/to/directory/
+# Add all files in a directory recursively: !/path/to/directory/**
 #
-# Add specific file:                        !path/to/file
-# Add all files in a directory:             !path/to/directory/
-# Add all files in a directory recursively: !path/to/directory/**
+# A pattern that does not contain a slash matches by basename
+# in any directory.
 # --------------------------------------------------
 
 # Deny by default
@@ -28,7 +34,7 @@
 # Allow specific root-level files and directories
 !/.github/**
 !/.vscode/**
-!/meta/**
+!/media/**
 !/.editorconfig
 !/.git-blame-ignore-revs
 !/.gitattributes
