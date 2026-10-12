@@ -1,12 +1,11 @@
 # --------------------------------------------------
-# List of participating organization members
+# List of repository maintainers
 #
-# This file contains the canonical list of the organization members
-# that are maintaining the project currently or were maintaining it in the past.
+# This file contains the canonical list of current and past project maintainers.
 # The name and email should match the canonical identity defined in the .mailmap
 # file.
 #
-# Add new maintainers below.
+# This file is kept up to date as project maintainers change.
 # --------------------------------------------------
 
 # Canonical Name <canonical@email.com> (URL)
