@@ -1,8 +1,8 @@
 # --------------------------------------------------
 # Commit blame ignore list.
 #
-# This file lists commits that are not useful for `git blame`,
-# such as mass formatting or file renaming changes.
+# Lists commits whose changes should be ignored by `git blame`,
+# such as formatting-only changes that obscure meaningful line history.
 #
 # To use this file as the default ignore list for blame,
 # run the following command manually:
