@@ -1,7 +1,10 @@
 {
   "[git-commit]": {
+    "editor.defaultFormatter": null,
+    "editor.formatOnSave": false,
     "editor.rulers": [72, 100],
     "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
     "workbench.editor.restoreViewState": false
   },
   "[json]": {
@@ -20,7 +23,8 @@
   "editor.formatOnType": false,
   "editor.rulers": [80],
   "files.associations": {
-    ".gitmessage": "ignore",
+    "*.*ignore": "ignore",
+    ".gitmessage": "git-commit",
     ".mailmap": "properties",
     "AUTHORS": "properties",
     "CODEOWNERS": "properties",
