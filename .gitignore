@@ -1,26 +1,26 @@
 # --------------------------------------------------
 # Allowlist git ignore file.
 #
-# This file uses a deny-by-default approach so all files
-# are ignored unless explicitly allowed via exceptions.
+# Ignore files by default, then allow repository inputs with ! exceptions.
+# Allowed directories can use their own .gitignore files to exclude generated
+# files.
 #
-# This avoids any unwanted auto-generated files from being
-# accidentally committed to the repository.
+# A leading / anchors a pattern to the directory containing this file.
+# A trailing / matches directories only. Patterns without a leading or middle
+# slash match names at any depth below this file. The last matching rule wins
+# within a file, while a nested .gitignore takes precedence for its subtree.
 #
-# By extension this file is used to exclude files from
-# tooling and other processes that rely on git to determine
-# which files are part of the project.
+# Allow one file:                    !/path/to/file
+# Allow directory traversal only:   !/path/to/directory/
+# Allow a directory's descendants:  !/path/to/directory/**
+# Allow a root-level file type:     !/*.json
 #
-# Add files and paths to be tracked by git by adding exceptions,
-# keep in mind to allow starting from the repository root to avoid
-# allowing files provided by dependencies.
+# !*/ keeps parent directories traversable so nested exceptions can work.
+# Ignored files can still be force-added. Tools may also use these rules for
+# discovery, but this file is not a security boundary.
 #
-# Add specific file:                        !/path/to/file
-# Add all files in a directory:             !/path/to/directory/
-# Add all files in a directory recursively: !/path/to/directory/**
-#
-# A pattern that does not contain a slash matches by basename
-# in any directory.
+# For more information, see:
+# https://git-scm.com/docs/gitignore
 # --------------------------------------------------
 
 # Deny by default
