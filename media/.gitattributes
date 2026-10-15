@@ -1,0 +1,173 @@
+# --------------------------------------------------
+# Git LFS Rules
+#
+# Git Large File Storage (LFS) stores large file contents on an LFS server
+# and small pointer files in Git history. Git LFS filters restore the contents
+# in the working tree and upload new objects when pushing.
+#
+# Contributors must have the Git LFS client installed before working with
+# LFS-tracked assets. Rules in this file apply to media/ and its descendants.
+# SVG source stays in Git as text and does not require Git LFS.
+#
+# Configure Git LFS once per clone after installing the client:
+# git lfs install --local
+# git lfs pull
+#
+# Common commands:
+# Show tracking patterns:           git lfs track
+# List tracked LFS files:           git lfs ls-files
+# Show pending LFS changes:         git lfs status
+# Download and restore files:       git lfs pull
+# Download without restoring:       git lfs fetch
+# Restore already downloaded files: git lfs checkout
+#
+# Run these tracking commands from media/, then commit .gitattributes
+# together with the assets. Quote patterns to prevent shell expansion:
+# git lfs track "*.[pP][sS][dD]"
+# git add .gitattributes path/to/asset.psd
+#
+# Troubleshooting commands:
+# Show configuration and endpoint:  git lfs env
+# Show the latest LFS error log:    git lfs logs last
+# Check local objects and pointers: git lfs fsck
+# Check an asset's effective rules: git check-attr filter diff merge text -- path/to/asset.psd
+#
+# If files contain pointer text instead of asset contents, try git lfs pull.
+# git lfs checkout only restores objects already available locally and does
+# not overwrite modified files. Check GIT_LFS_SKIP_SMUDGE and fetch include
+# or exclude settings if expected files remain pointers.
+#
+# Missing remote objects require an upload from a clone holding the contents.
+# From that clone, git lfs push origin HEAD uploads objects for the current ref.
+# Authentication, endpoint, and server quota errors must be resolved before
+# retrying the transfer. git lfs fsck can move corrupt local objects to
+# .git/lfs/bad and cannot recover contents missing from every copy.
+#
+# Tracking patterns do not convert existing history. After changing the rules,
+# convert the current version of an already tracked asset from media/ with:
+# git add --renormalize -- path/to/asset.psd
+#
+# Use git lfs migrate only when deliberately migrating commits and coordinate
+# any history rewrite with collaborators.
+# Removing a tracking pattern does not restore historical contents to Git.
+#
+# CI jobs also need Git LFS configured and the required objects downloaded.
+# Existing pre-push hooks must retain the Git LFS upload step. If installation
+# reports a hook conflict, get integration guidance with:
+# git lfs install --local --manual
+#
+# For more information, see:
+# https://git-lfs.com/
+# https://github.com/git-lfs/git-lfs/tree/main/docs/man
+# --------------------------------------------------
+
+# --------------------------
+# Common Rules
+#
+# Store binary media formats and asset bundles in Git LFS.
+# Keep editable SVG source as normal Git text.
+# Patterns also apply to files in subdirectories.
+# --------------------------
+
+# Documents
+*.[oO][dD][tT]          filter=lfs diff=lfs merge=lfs -text
+*.[oO][dD][sS]          filter=lfs diff=lfs merge=lfs -text
+*.[oO][dD][pP]          filter=lfs diff=lfs merge=lfs -text
+*.[eE][pP][uU][bB]      filter=lfs diff=lfs merge=lfs -text
+*.[rR][tT][fF]          filter=lfs diff=lfs merge=lfs -text
+*.[dD][oO][cC]          filter=lfs diff=lfs merge=lfs -text
+*.[dD][oO][cC][xX]      filter=lfs diff=lfs merge=lfs -text
+*.[dD][oO][cC][mM]      filter=lfs diff=lfs merge=lfs -text
+*.[pP][dD][fF]          filter=lfs diff=lfs merge=lfs -text
+*.[xX][lL][sS]          filter=lfs diff=lfs merge=lfs -text
+*.[xX][lL][sS][xX]      filter=lfs diff=lfs merge=lfs -text
+*.[xX][lL][sS][mM]      filter=lfs diff=lfs merge=lfs -text
+*.[pP][pP][tT]          filter=lfs diff=lfs merge=lfs -text
+*.[pP][pP][tT][xX]      filter=lfs diff=lfs merge=lfs -text
+*.[pP][pP][tT][mM]      filter=lfs diff=lfs merge=lfs -text
+
+# SVG source
+*.[sS][vV][gG]          -filter !diff !merge text eol=lf
+
+# Graphics
+*.[wW][eE][bB][pP]      filter=lfs diff=lfs merge=lfs -text
+*.[aA][vV][iI][fF]      filter=lfs diff=lfs merge=lfs -text
+*.[jJ][xX][lL]          filter=lfs diff=lfs merge=lfs -text
+*.[iI][cC][oO]          filter=lfs diff=lfs merge=lfs -text
+*.[eE][pP][sS]          filter=lfs diff=lfs merge=lfs -text
+*.[eE][xX][rR]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][gG][aA]          filter=lfs diff=lfs merge=lfs -text
+*.[pP][nN][gG]          filter=lfs diff=lfs merge=lfs -text
+*.[jJ][pP][gG]          filter=lfs diff=lfs merge=lfs -text
+*.[jJ][pP][eE][gG]      filter=lfs diff=lfs merge=lfs -text
+*.[gG][iI][fF]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][iI][fF]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][iI][fF][fF]      filter=lfs diff=lfs merge=lfs -text
+*.[bB][mM][pP]          filter=lfs diff=lfs merge=lfs -text
+*.[hH][eE][iI][cC]      filter=lfs diff=lfs merge=lfs -text
+*.[hH][eE][iI][fF]      filter=lfs diff=lfs merge=lfs -text
+
+# Design assets
+*.[pP][sS][dD]          filter=lfs diff=lfs merge=lfs -text
+*.[pP][sS][bB]          filter=lfs diff=lfs merge=lfs -text
+*.[aA][iI]              filter=lfs diff=lfs merge=lfs -text
+*.[xX][cC][fF]          filter=lfs diff=lfs merge=lfs -text
+*.[bB][lL][eE][nN][dD]  filter=lfs diff=lfs merge=lfs -text
+
+# Fonts
+*.[wW][oO][fF][fF]      filter=lfs diff=lfs merge=lfs -text
+*.[wW][oO][fF][fF]2     filter=lfs diff=lfs merge=lfs -text
+*.[tT][tT][fF]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][tT][cC]          filter=lfs diff=lfs merge=lfs -text
+*.[oO][tT][fF]          filter=lfs diff=lfs merge=lfs -text
+*.[eE][oO][tT]          filter=lfs diff=lfs merge=lfs -text
+
+# Audio
+*.[mM][pP]3             filter=lfs diff=lfs merge=lfs -text
+*.[wW][aA][vV]          filter=lfs diff=lfs merge=lfs -text
+*.[fF][lL][aA][cC]      filter=lfs diff=lfs merge=lfs -text
+*.[oO][gG][gG]          filter=lfs diff=lfs merge=lfs -text
+*.[oO][pP][uU][sS]      filter=lfs diff=lfs merge=lfs -text
+*.[aA][aA][cC]          filter=lfs diff=lfs merge=lfs -text
+*.[mM]4[aA]             filter=lfs diff=lfs merge=lfs -text
+
+# Video
+*.[mM][pP]4             filter=lfs diff=lfs merge=lfs -text
+*.[mM]4[vV]             filter=lfs diff=lfs merge=lfs -text
+*.[wW][eE][bB][mM]      filter=lfs diff=lfs merge=lfs -text
+*.[mM][oO][vV]          filter=lfs diff=lfs merge=lfs -text
+*.[mM][kK][vV]          filter=lfs diff=lfs merge=lfs -text
+*.[aA][vV][iI]          filter=lfs diff=lfs merge=lfs -text
+*.[mM][pP][eE][gG]      filter=lfs diff=lfs merge=lfs -text
+*.[mM][pP][gG]          filter=lfs diff=lfs merge=lfs -text
+
+# Archives
+*.[sS][vV][gG][zZ]      filter=lfs diff=lfs merge=lfs -text
+*.[bB][rR]              filter=lfs diff=lfs merge=lfs -text
+*.[lL][zZ]4             filter=lfs diff=lfs merge=lfs -text
+*.7[zZ]                 filter=lfs diff=lfs merge=lfs -text
+*.[bB][zZ]              filter=lfs diff=lfs merge=lfs -text
+*.[bB][zZ]2             filter=lfs diff=lfs merge=lfs -text
+*.[bB][zZ][iI][pP]2     filter=lfs diff=lfs merge=lfs -text
+*.[gG][zZ]              filter=lfs diff=lfs merge=lfs -text
+*.[lL][zZ]              filter=lfs diff=lfs merge=lfs -text
+*.[lL][zZ][mM][aA]      filter=lfs diff=lfs merge=lfs -text
+*.[rR][aA][rR]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][aA][rR]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][aA][zZ]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][bB][zZ]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][bB][zZ]2         filter=lfs diff=lfs merge=lfs -text
+*.[tT][gG][zZ]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][lL][zZ]          filter=lfs diff=lfs merge=lfs -text
+*.[tT][xX][zZ]          filter=lfs diff=lfs merge=lfs -text
+*.[xX][zZ]              filter=lfs diff=lfs merge=lfs -text
+*.[zZ]                  filter=lfs diff=lfs merge=lfs -text
+*.[zZ][iI][pP]          filter=lfs diff=lfs merge=lfs -text
+*.[zZ][sS][tT]          filter=lfs diff=lfs merge=lfs -text
+
+# --------------------------
+# Custom Rules
+#
+# Define rules for specific files or directories here.
+# Keep general file-type rules in the sections above.
+# --------------------------
