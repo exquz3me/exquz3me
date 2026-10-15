@@ -10,7 +10,7 @@
 # slash match names at any depth below this file. The last matching rule wins
 # within a file, while a nested .gitignore takes precedence for its subtree.
 #
-# Allow one file:                    !/path/to/file
+# Allow one file:                   !/path/to/file
 # Allow directory traversal only:   !/path/to/directory/
 # Allow a directory's descendants:  !/path/to/directory/**
 # Allow a root-level file type:     !/*.json
