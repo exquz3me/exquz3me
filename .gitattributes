@@ -41,145 +41,145 @@
 *           text=auto eol=lf
 
 # Text files where line endings should be preserved
-*.diff     -text
-*.patch    -text
+*.[dD][iI][fF][fF]                  -text
+*.[pP][aA][tT][cC][hH]              -text
 
 # Ignore files
-*.*ignore   text      eol=lf
+*.*[iI][gG][nN][oO][rR][eE]         text      eol=lf
 
 # Scripts
-*.ps1       text=auto eol=lf
-*.bat       text      eol=crlf
-*.cmd       text      eol=crlf
-*.bash      text      eol=lf
-*.fish      text      eol=lf
-*.ksh       text      eol=lf
-*.sh        text      eol=lf
-*.zsh       text      eol=lf
+*.[pP][sS]1                         text=auto eol=lf
+*.[bB][aA][tT]                      text      eol=crlf
+*.[cC][mM][dD]                      text      eol=crlf
+*.[bB][aA][sS][hH]                  text      eol=lf
+*.[fF][iI][sS][hH]                  text      eol=lf
+*.[kK][sS][hH]                      text      eol=lf
+*.[sS][hH]                          text      eol=lf
+*.[zZ][sS][hH]                      text      eol=lf
 
 # Serialization
-*.xml      text=auto
-*.json     text
-*.jsonc    text
-*.json5    text
-*.toml     text
-*.yaml     text
-*.yml      text
+*.[xX][mM][lL]                      text=auto
+*.[jJ][sS][oO][nN]                  text
+*.[jJ][sS][oO][nN][cC]              text
+*.[jJ][sS][oO][nN]5                 text
+*.[tT][oO][mM][lL]                  text
+*.[yY][aA][mM][lL]                  text
+*.[yY][mM][lL]                      text
 
 # Documents
-*.txt      text=auto
-*.md       text       eol=lf diff=markdown
-*.mdx      text       eol=lf diff=markdown
-*.tex      text              diff=tex
-*.adoc     text
-*.textile  text
-*.mustache text
-*.tab      text
-*.tsv      text
-*.sql      text
-*.sha256   text       eol=lf
-*.ansi     text       eol=lf
-*.bib      text              diff=bibtex
-*.bibtex   text              diff=bibtex
-*.odt      binary
-*.ods      binary
-*.odp      binary
-*.epub     binary
-*.[rR][tT][fF]     binary
-*.[dD][oO][cC]     binary
-*.[dD][oO][cC][xX] binary
-*.[dD][oO][cC][mM] binary
-*.[pP][dD][fF]     binary
-*.[xX][lL][sS]     binary
-*.[xX][lL][sS][xX] binary
-*.[xX][lL][sS][mM] binary
-*.[pP][pP][tT]     binary
-*.[pP][pP][tT][xX] binary
-*.[pP][pP][tT][mM] binary
+*.[tT][xX][tT]                      text=auto
+*.[mM][dD]                          text       eol=lf diff=markdown
+*.[mM][dD][xX]                      text       eol=lf diff=markdown
+*.[tT][eE][xX]                      text              diff=tex
+*.[aA][dD][oO][cC]                  text
+*.[tT][eE][xX][tT][iI][lL][eE]      text
+*.[mM][uU][sS][tT][aA][cC][hH][eE]  text
+*.[tT][aA][bB]                      text
+*.[tT][sS][vV]                      text
+*.[sS][qQ][lL]                      text
+*.[sS][hH][aA]256                   text       eol=lf
+*.[aA][nN][sS][iI]                  text       eol=lf
+*.[bB][iI][bB]                      text              diff=bibtex
+*.[bB][iI][bB][tT][eE][xX]          text              diff=bibtex
+*.[oO][dD][tT]                      binary
+*.[oO][dD][sS]                      binary
+*.[oO][dD][pP]                      binary
+*.[eE][pP][uU][bB]                  binary
+*.[rR][tT][fF]                      binary
+*.[dD][oO][cC]                      binary
+*.[dD][oO][cC][xX]                  binary
+*.[dD][oO][cC][mM]                  binary
+*.[pP][dD][fF]                      binary
+*.[xX][lL][sS]                      binary
+*.[xX][lL][sS][xX]                  binary
+*.[xX][lL][sS][mM]                  binary
+*.[pP][pP][tT]                      binary
+*.[pP][pP][tT][xX]                  binary
+*.[pP][pP][tT][mM]                  binary
 
 # Graphics
-*.svg              text
-*.webp             binary
-*.avif             binary
-*.jxl              binary
-*.ico              binary
-*.eps              binary
-*.[pP][nN][gG]     binary
-*.[jJ][pP][gG]     binary
-*.[jJ][pP][eE][gG] binary
-*.[gG][iI][fF]     binary
-*.[tT][iI][fF]     binary
-*.[tT][iI][fF][fF] binary
-*.[bB][mM][pP]     binary
-*.[hH][eE][iI][cC] binary
-*.[hH][eE][iI][fF] binary
+*.[sS][vV][gG]                      text
+*.[wW][eE][bB][pP]                  binary
+*.[aA][vV][iI][fF]                  binary
+*.[jJ][xX][lL]                      binary
+*.[iI][cC][oO]                      binary
+*.[eE][pP][sS]                      binary
+*.[pP][nN][gG]                      binary
+*.[jJ][pP][gG]                      binary
+*.[jJ][pP][eE][gG]                  binary
+*.[gG][iI][fF]                      binary
+*.[tT][iI][fF]                      binary
+*.[tT][iI][fF][fF]                  binary
+*.[bB][mM][pP]                      binary
+*.[hH][eE][iI][cC]                  binary
+*.[hH][eE][iI][fF]                  binary
 
 # Design assets
-*.psd       binary
-*.ai        binary
-*.xcf       binary
-*.blend     binary
+*.[pP][sS][dD]                      binary
+*.[aA][iI]                          binary
+*.[xX][cC][fF]                      binary
+*.[bB][lL][eE][nN][dD]              binary
 
 # Fonts
-*.woff      binary
-*.woff2     binary
-*.ttf       binary
-*.otf       binary
-*.eot       binary
+*.[wW][oO][fF][fF]                  binary
+*.[wW][oO][fF][fF]2                 binary
+*.[tT][tT][fF]                      binary
+*.[oO][tT][fF]                      binary
+*.[eE][oO][tT]                      binary
 
 # Audio
-*.mp3       binary
-*.wav       binary
-*.flac      binary
-*.ogg       binary
-*.opus      binary
-*.aac       binary
-*.m4a       binary
+*.[mM][pP]3                         binary
+*.[wW][aA][vV]                      binary
+*.[fF][lL][aA][cC]                  binary
+*.[oO][gG][gG]                      binary
+*.[oO][pP][uU][sS]                  binary
+*.[aA][aA][cC]                      binary
+*.[mM]4[aA]                         binary
 
 # Video
-*.mp4       binary
-*.webm      binary
-*.mov       binary
-*.mkv       binary
-*.avi       binary
-*.mpeg      binary
-*.mpg       binary
+*.[mM][pP]4                         binary
+*.[wW][eE][bB][mM]                  binary
+*.[mM][oO][vV]                      binary
+*.[mM][kK][vV]                      binary
+*.[aA][vV][iI]                      binary
+*.[mM][pP][eE][gG]                  binary
+*.[mM][pP][gG]                      binary
 
 # Compiled files
-*.exe       binary
-*.dll       binary
-*.so        binary
-*.dylib     binary
-*.o         binary
-*.a         binary
-*.class     binary
-*.pyc       binary
-*.wasm      binary
-*.so.[0-9]* binary
+*.[eE][xX][eE]                      binary
+*.[dD][lL][lL]                      binary
+*.[sS][oO]                          binary
+*.[dD][yY][lL][iI][bB]              binary
+*.[oO]                              binary
+*.[aA]                              binary
+*.[cC][lL][aA][sS][sS]              binary
+*.[pP][yY][cC]                      binary
+*.[wW][aA][sS][mM]                  binary
+*.[sS][oO].[0-9]*                   binary
 
 # Archives
-*.svgz      binary
-*.br        binary
-*.lz4       binary
-*.7z        binary
-*.bz        binary
-*.bz2       binary
-*.bzip2     binary
-*.gz        binary
-*.lz        binary
-*.lzma      binary
-*.rar       binary
-*.tar       binary
-*.taz       binary
-*.tbz       binary
-*.tbz2      binary
-*.tgz       binary
-*.tlz       binary
-*.txz       binary
-*.xz        binary
-*.Z         binary
-*.zip       binary
-*.zst       binary
+*.[sS][vV][gG][zZ]                  binary
+*.[bB][rR]                          binary
+*.[lL][zZ]4                         binary
+*.7[zZ]                             binary
+*.[bB][zZ]                          binary
+*.[bB][zZ]2                         binary
+*.[bB][zZ][iI][pP]2                 binary
+*.[gG][zZ]                          binary
+*.[lL][zZ]                          binary
+*.[lL][zZ][mM][aA]                  binary
+*.[rR][aA][rR]                      binary
+*.[tT][aA][rR]                      binary
+*.[tT][aA][zZ]                      binary
+*.[tT][bB][zZ]                      binary
+*.[tT][bB][zZ]2                     binary
+*.[tT][gG][zZ]                      binary
+*.[tT][lL][zZ]                      binary
+*.[tT][xX][zZ]                      binary
+*.[xX][zZ]                          binary
+*.[zZ]                              binary
+*.[zZ][iI][pP]                      binary
+*.[zZ][sS][tT]                      binary
 
 # --------------------------
 # Conditional Rules
@@ -189,10 +189,10 @@
 # or use specific paths below.
 # --------------------------
 
-# *.csv     text   eol=crlf
-# *.dot     binary
-# *.obj     binary
-# *.lib     binary
+# *.[cC][sS][vV]                      text   eol=crlf
+# *.[dD][oO][tT]                      binary
+# *.[oO][bB][jJ]                      binary
+# *.[lL][iI][bB]                      binary
 
 # --------------------------
 # Custom Rules
