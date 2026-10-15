@@ -1,0 +1,32 @@
+chore(scope): describe the change (#ref)
+
+# why: what problem does this solve?
+# what: what changed
+
+# BREAKING CHANGE: describe the required migration
+
+# --------------------------------------------------
+# Git commit message template.
+#
+# Git uses this template for a new commit message written in an editor.
+# Replace the type and subject above, then add a body or footer
+# if useful. Keep the subject on the first line.
+#
+# To use this commit template in your local repository, run:
+# git config --local commit.template .gitmessage
+# --------------------------------------------------
+
+# --------------------------
+# Formatting Rules
+# --------------------------
+
+# writing style:    prefer a lowercase start and imperative wording
+# type (required):  feat, fix, docs, style, refactor, perf, test, build,
+#                   ci, chore, revert, all lowercase
+# scope (optional): kebab-case, omit parentheses
+#                   can describe the project, package, or tooling
+# dependencies:     use deps or dev-deps as a scope
+# body/footer:      seperate from the header with a blank line
+# breaking change:  add ! before the colon and describe the required
+#                   migration in the body/footer
+# references:       replace #ref to reference an issue, PR, or commit
