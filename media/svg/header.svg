@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="575" height="150" viewBox="88 176 1104 288" role="img" aria-labelledby="title desc">
   <title id="title">sphoon</title>
-  <desc id="desc">Raleway sphoon wordmark above EVERYONE IS CONNECTED and block accents, followed by a vertical divider and a gently swaying rear square and a tile with a transparent dove cutout that traces, fills, holds for two seconds, and fades before repeating. Dark artwork in light mode and white artwork in dark mode, with a static dove for reduced motion.</desc>
+  <desc id="desc">Raleway sphoon wordmark above EVERYONE IS CONNECTED and block accents, followed by a vertical divider and a gently swaying rear square and a tile with an animated transparent dove cutout. Dark artwork in light mode and white artwork in dark mode, with a static dove for reduced motion.</desc>
   <style>
     :root { color: #212529; }
     @media (prefers-color-scheme: light) {
@@ -12,43 +12,24 @@
     .dove-fill { opacity: 1; }
     .dove-strokes { opacity: 0; }
     @media (prefers-reduced-motion: no-preference) {
-      /* 3.41s trace, 0.35s fill, 2s hold, 1.2s fade, 0.63s pause. */
-      .dove-fill,
-      .dove-strokes,
-      .dove-outline,
-      .dove-eye {
-        animation-duration: 7.59s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: both;
+      .dove-fill {
+        animation: fill-dove 350ms ease 2.71s backwards;
       }
-      .dove-fill { animation-name: fill-dove; animation-timing-function: ease; }
-      .dove-strokes { animation-name: fade-dove; animation-timing-function: ease; }
-      .dove-outline { animation-name: draw-dove; animation-timing-function: linear; }
-      .dove-eye { animation-name: draw-eye; animation-timing-function: linear; }
+      .dove-strokes { opacity: 1; }
+      .dove-outline {
+        animation: draw-dove 1.904964s cubic-bezier(0.333333, 0.721862, 0.666667, 0.936299) both;
+      }
+      .dove-eye {
+        animation: draw-dove 0.805036s cubic-bezier(0.333333, 1, 0.666667, 1) 1.904964s both;
+      }
     }
     @keyframes draw-dove {
-      0% {
-        stroke-dashoffset: 1000;
-        animation-timing-function: cubic-bezier(0.333333, 0.721862, 0.666667, 0.936299);
-      }
-      31.581306%, 100% { stroke-dashoffset: 0; }
-    }
-    @keyframes draw-eye {
-      0% { stroke-dashoffset: 1000; }
-      31.581306% {
-        stroke-dashoffset: 1000;
-        animation-timing-function: cubic-bezier(0.333333, 1, 0.666667, 1);
-      }
-      44.927536%, 100% { stroke-dashoffset: 0; }
+      from { stroke-dashoffset: 1000; }
+      to { stroke-dashoffset: 0; }
     }
     @keyframes fill-dove {
-      0%, 44.927536% { opacity: 0; }
-      49.538867%, 75.889328% { opacity: 1; }
-      91.699605%, 100% { opacity: 0; }
-    }
-    @keyframes fade-dove {
-      0%, 75.889328% { opacity: 1; }
-      91.699605%, 100% { opacity: 0; }
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     .rear-square {
       transform-box: fill-box;
