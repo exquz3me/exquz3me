@@ -23,3 +23,27 @@ end_of_line = lf
 indent_style = space
 indent_size = 2
 max_line_length = 80
+
+# Settings for specific file types
+[*.{patch,diff}]
+charset = unset
+end_of_line = unset
+indent_style = unset
+indent_size = unset
+insert_final_newline = unset
+max_line_length = unset
+trim_trailing_whitespace = false
+
+[*.{bat,cmd}]
+end_of_line = crlf
+
+[*.{csv,tsv,tab}]
+trim_trailing_whitespace = false
+max_line_length = unset
+
+[*.ansi]
+trim_trailing_whitespace = false
+
+[*.{md,mdx}]
+indent_size = unset
+trim_trailing_whitespace = false
