@@ -12,12 +12,12 @@
     .dove-fill { opacity: 1; }
     .dove-strokes { opacity: 0; }
     @media (prefers-reduced-motion: no-preference) {
-      /* 3.41s trace, 0.35s fill, 2s hold, 1.2s fade, then repeat. */
+      /* 3.41s trace, 0.35s fill, 2s hold, 1.2s fade, 0.63s pause. */
       .dove-fill,
       .dove-strokes,
       .dove-outline,
       .dove-eye {
-        animation-duration: 6.96s;
+        animation-duration: 7.59s;
         animation-iteration-count: infinite;
         animation-fill-mode: both;
       }
@@ -31,24 +31,24 @@
         stroke-dashoffset: 1000;
         animation-timing-function: cubic-bezier(0.333333, 0.721862, 0.666667, 0.936299);
       }
-      34.439959%, 100% { stroke-dashoffset: 0; }
+      31.581306%, 100% { stroke-dashoffset: 0; }
     }
     @keyframes draw-eye {
       0% { stroke-dashoffset: 1000; }
-      34.439959% {
+      31.581306% {
         stroke-dashoffset: 1000;
         animation-timing-function: cubic-bezier(0.333333, 1, 0.666667, 1);
       }
-      48.994253%, 100% { stroke-dashoffset: 0; }
+      44.927536%, 100% { stroke-dashoffset: 0; }
     }
     @keyframes fill-dove {
-      0%, 48.994253% { opacity: 0; }
-      54.022989%, 82.758621% { opacity: 1; }
-      100% { opacity: 0; }
+      0%, 44.927536% { opacity: 0; }
+      49.538867%, 75.889328% { opacity: 1; }
+      91.699605%, 100% { opacity: 0; }
     }
     @keyframes fade-dove {
-      0%, 82.758621% { opacity: 1; }
-      100% { opacity: 0; }
+      0%, 75.889328% { opacity: 1; }
+      91.699605%, 100% { opacity: 0; }
     }
     .rear-square {
       transform-box: fill-box;
