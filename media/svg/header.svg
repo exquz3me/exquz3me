@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="575" height="150" viewBox="88 176 1104 288" role="img" aria-labelledby="title desc">
   <title id="title">sphoon</title>
-  <desc id="desc">Raleway sphoon wordmark above EVERYONE IS CONNECTED and block accents, followed by a vertical divider and a gently swaying rear square and a tile with an animated transparent dove cutout. Dark artwork in light mode and white artwork in dark mode, with a static dove for reduced motion.</desc>
+  <desc id="desc">sphoon wordmark</desc>
   <style>
     :root { color: #212529; }
     @media (prefers-color-scheme: light) {
