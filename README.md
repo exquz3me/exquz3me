@@ -8,24 +8,15 @@
 -- >
 
 <!-- ? ############################################# -->
-<!-- ? Header -->
+<!-- ? Main Area -->
 
 <h1 align="center">
 
 ![header][header]
 
+[![description][description]][nlobby4]
+
 </h1>
-
-<!-- ? ############################################### -->
-<!-- ? Main Area -->
-
-<div align="center">
-
-![description][description]
-
-</div>
-
----
 
 <!-- ? ############################################# -->
 <!-- ? YouTube Video Section -->
@@ -43,3 +34,4 @@
 
 [header]: ./media/svg/header.svg
 [description]: ./media/svg/description.svg
+[nlobby4]: https://github.com/nlobby4
