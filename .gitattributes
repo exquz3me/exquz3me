@@ -1,10 +1,13 @@
 # --------------------------------------------------
 # Generic attributes and settings for the repository.
 #
-# This file defines attributes for files in the repository,
-# such as line ending normalization, Git LFS settings,
-# and diff drivers for specific file types. It helps ensure
-# consistent handling of files across different platforms.
+# Define general file handling and cross-platform behavior using native
+# Git attributes here. Keep project, framework, external-tool, and
+# hosting-service rules in appropriately scoped .gitattributes files.
+#
+# Text rules control line ending normalization. Binary rules disable text
+# normalization, text diffs, and automatic text merges. Named diff drivers
+# below use Git's built-in patterns.
 #
 # Explicit text and eol attributes take precedence over core.autocrlf.
 # Rules below use LF by default and define CRLF exceptions where needed.
@@ -25,8 +28,8 @@
 #
 # Negative patterns (!pattern) are not supported.
 #
-# Files can be ignored from GitHub source zip downloads
-# by using the `export-ignore` attribute.
+# Use export-ignore for files that should be omitted from Git source archives.
+# Keep archive exclusions specific to the project's distribution needs.
 #
 # For more information, see:
 # https://git-scm.com/docs/gitattributes#_end_of_line_conversion
@@ -104,6 +107,8 @@
 *.[jJ][xX][lL]                      binary
 *.[iI][cC][oO]                      binary
 *.[eE][pP][sS]                      binary
+*.[tT][gG][aA]                      binary
+*.[eE][xX][rR]                      binary
 *.[pP][nN][gG]                      binary
 *.[jJ][pP][gG]                      binary
 *.[jJ][pP][eE][gG]                  binary
@@ -116,6 +121,7 @@
 
 # Design assets
 *.[pP][sS][dD]                      binary
+*.[pP][sS][bB]                      binary
 *.[aA][iI]                          binary
 *.[xX][cC][fF]                      binary
 *.[bB][lL][eE][nN][dD]              binary
@@ -124,6 +130,7 @@
 *.[wW][oO][fF][fF]                  binary
 *.[wW][oO][fF][fF]2                 binary
 *.[tT][tT][fF]                      binary
+*.[tT][tT][cC]                      binary
 *.[oO][tT][fF]                      binary
 *.[eE][oO][tT]                      binary
 
@@ -138,6 +145,7 @@
 
 # Video
 *.[mM][pP]4                         binary
+*.[mM]4[vV]                         binary
 *.[wW][eE][bB][mM]                  binary
 *.[mM][oO][vV]                      binary
 *.[mM][kK][vV]                      binary
