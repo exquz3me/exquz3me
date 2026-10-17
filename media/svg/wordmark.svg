@@ -2,12 +2,12 @@
   <title id="title">sphoon</title>
   <desc id="desc">Standalone sphoon wordmark</desc>
   <style>
-    :root { color: #212529; }
+    :root { color: #010101; }
     @media (prefers-color-scheme: light) {
-      :root { color: #212529; }
+      :root { color: #010101; }
     }
     @media (prefers-color-scheme: dark) {
-      :root { color: #f8f9fa; }
+      :root { color: #fff; }
     }
   </style>
   <g transform="translate(483 320) scale(0.8788598575) translate(-467 -320)">

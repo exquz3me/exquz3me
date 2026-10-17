@@ -2,12 +2,12 @@
   <title id="title">sphoon</title>
   <desc id="desc">Combined standalone sphoon wordmark and dove</desc>
   <style>
-    :root { color: #212529; }
+    :root { color: #010101; }
     @media (prefers-color-scheme: light) {
-      :root { color: #212529; }
+      :root { color: #010101; }
     }
     @media (prefers-color-scheme: dark) {
-      :root { color: #f8f9fa; }
+      :root { color: #fff; }
     }
     .dove-fill { opacity: 1; }
     .dove-strokes { opacity: 0; }

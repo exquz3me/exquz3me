@@ -2,17 +2,17 @@
   <title id="title">Now this looks like a job for me - Eminem</title>
   <desc id="desc">I'm currently working on modifying a collaborative drawing platform named flockmod. Check out the nlobby4 organization for more information.</desc>
   <style>
-    :root { color: #212529; }
+    :root { color: #010101; }
     .border { stroke: currentColor; stroke-opacity: 0.3; }
     .muted { fill: currentColor; fill-opacity: 0.65; }
     .body { fill: currentColor; fill-opacity: 0.85; }
     text { font-family: Arial, Helvetica, sans-serif; }
     .label { font-family: ui-monospace, 'Courier New', monospace; font-size: 9px; letter-spacing: 1.2px; }
     @media (prefers-color-scheme: light) {
-      :root { color: #212529; }
+      :root { color: #010101; }
     }
     @media (prefers-color-scheme: dark) {
-      :root { color: #f8f9fa; }
+      :root { color: #fff; }
     }
   </style>
   <rect x=".5" y=".5" width="849" height="283" class="border" />
@@ -42,12 +42,12 @@
   </svg>
   <svg x="66.5" y="88" width="144" height="144" viewBox="0 0 128 128" class="nlobby4-logo" role="img" aria-label="nlobby4">
     <style>
-      .nlobby4-logo { color: #000; --nlobby4-background: #fff; }
+      .nlobby4-logo { color: #010101; --nlobby4-background: #fff; }
       @media (prefers-color-scheme: light) {
-        .nlobby4-logo { color: #000; --nlobby4-background: #fff; }
+        .nlobby4-logo { color: #010101; --nlobby4-background: #fff; }
       }
       @media (prefers-color-scheme: dark) {
-        .nlobby4-logo { color: #fff; --nlobby4-background: #000; }
+        .nlobby4-logo { color: #fff; --nlobby4-background: #010101; }
       }
     </style>
     <rect width="128" height="128" fill="var(--nlobby4-background)" />
