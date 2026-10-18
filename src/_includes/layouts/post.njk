@@ -1,19 +1,26 @@
 ---
 layout: layouts/base.njk
 ---
-<main id="main">
-  <header class="section article-heading">
-    <div class="rail" aria-hidden="true"><span>01</span><span>ARTICLE</span></div>
-    <div class="section-body">
-      <a class="article-back" href="/blog/">← All articles</a>
-      <h1 class="page-title">{{ title | escape }}</h1>
-      <p class="post-meta"><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time></p>
-    </div>
-  </header>
-  <div class="section article-content">
+<main class="blog numbered-article" id="main" tabindex="-1">
+  <div class="section article-navigation-row">
     <div aria-hidden="true"></div>
-    <article class="section-body post-body" aria-label="{{ title | escape }}">
-      {{ content | safe }}
-    </article>
+    <div class="section-body">
+      <div class="section-heading article-navigation">
+        <a class="article-back" href="/blog/">← All articles</a>
+        <span class="eyebrow">JOURNAL</span>
+      </div>
+    </div>
   </div>
+  <article class="section article-content" aria-labelledby="article-title">
+    <div aria-hidden="true"></div>
+    <div class="section-body article-sections">
+      <header class="article-heading">
+        <h1 class="page-title" id="article-title">{{ title | escape }}</h1>
+        <p class="post-meta"><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time></p>
+      </header>
+      <div class="post-body">
+        {{ content | safe }}
+      </div>
+    </div>
+  </article>
 </main>

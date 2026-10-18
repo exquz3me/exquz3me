@@ -5,80 +5,55 @@ description: My projects and links. You found them.
 navigation: portfolio
 permalink: /
 ---
-<div class="background-line" aria-hidden="true" hidden>
-  <svg
-    viewBox="0 0 1200 1800"
-    preserveAspectRatio="none"
-    fill="none"
-    focusable="false"
-  >
-    <defs>
-      <linearGradient
-        id="page-gradient"
-        x1="0"
-        y1="0"
-        x2="1200"
-        y2="1800"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stop-color="#ff528f" />
-        <stop offset=".2" stop-color="#ff8b47" />
-        <stop offset=".4" stop-color="#e4ef73" />
-        <stop offset=".6" stop-color="#62e3b8" />
-        <stop offset=".8" stop-color="#65baff" />
-        <stop offset="1" stop-color="#be7bff" />
-      </linearGradient>
-      <filter
-        id="line-text-softness"
-        x="-50%"
-        y="-100%"
-        width="200%"
-        height="300%"
-      >
-        <feGaussianBlur stdDeviation="5" />
-      </filter>
-      <mask
-        id="line-text-fade"
-        maskUnits="userSpaceOnUse"
-        style="mask-type: luminance"
-      >
-        <rect
-          class="line-mask-base"
-          width="1200"
-          height="1800"
-          fill="#fff"
-        />
-        <g
-          class="line-text-zones"
-          fill="#000"
-          filter="url(#line-text-softness)"
-        ></g>
-      </mask>
-    </defs>
-    <g mask="url(#line-text-fade)">
-      <path
-        class="routed-line"
-        visibility="hidden"
-        d="M-80 80 C720 0 1260 0 1260 230 S100 425 100 625 S1100 725 1100 900 C1100 1040 70 905 70 1105 C70 1285 820 1075 820 1375 C820 1535 600 1595 600 1800"
-        stroke="url(#page-gradient)"
-        stroke-width="8"
-        stroke-linecap="round"
-        vector-effect="non-scaling-stroke"
-      />
-    </g>
-  </svg>
-</div>
-<main id="main">
+<main class="portfolio" id="main" tabindex="-1">
   <section class="section intro" aria-labelledby="intro-title">
     <div class="rail" aria-hidden="true">
       <span>01</span><span>INTRO</span>
     </div>
     <div class="section-body">
-      <p class="eyebrow">EXQUZ3ME / PORTFOLIO</p>
+      <p class="eyebrow">PERSONAL INDEX</p>
       <div class="hero">
-        <h1 id="intro-title">
-          <span>Evidence that</span><span>I own a computer.</span>
-        </h1>
+        <div class="hero-copy">
+          <h1 id="intro-title">
+            <span>Evidence that</span><span>I own a computer.</span>
+          </h1>
+          <div class="intro-actions">
+            <a class="button" href="#work"
+              >Explore the work
+              <svg
+                class="arrow arrow-down"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M5 19 19 5M5 5h14v14"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="square"
+                  stroke-linejoin="miter"
+                /></svg
+            ></a>
+            <a class="button" href="#links"
+              >Find me elsewhere
+              <svg
+                class="arrow arrow-down"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M5 19 19 5M5 5h14v14"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="square"
+                  stroke-linejoin="miter"
+                /></svg
+            ></a>
+          </div>
+        </div>
         <img
           class="hero-dove"
           src="/media/svg/dove.svg"
@@ -86,42 +61,6 @@ permalink: /
           height="150"
           alt=""
         />
-        <div class="intro-actions">
-          <a class="button" href="#work"
-            >Explore the work
-            <svg
-              class="arrow arrow-down"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M5 19 19 5M5 5h14v14"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="square"
-                stroke-linejoin="miter"
-              /></svg
-          ></a>
-          <a class="button" href="#links"
-            >Find me elsewhere
-            <svg
-              class="arrow arrow-down"
-              viewBox="0 0 24 24"
-              fill="none"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                d="M5 19 19 5M5 5h14v14"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="square"
-                stroke-linejoin="miter"
-              /></svg
-          ></a>
-        </div>
       </div>
     </div>
   </section>
@@ -132,11 +71,14 @@ permalink: /
     </div>
     <div class="section-body">
       <div class="section-heading">
-        <h2 id="work-title">Projects.</h2>
+        <h2 id="work-title">Code</h2>
         <span class="eyebrow">GITHUB</span>
       </div>
       <div class="project-grid">
-        <a class="project" href="https://github.com/exquz3me">
+        <a class="project indexed-panel" href="https://github.com/exquz3me">
+          <div class="entry-register" aria-hidden="true">
+            <span>ENTRY / 001</span><span>PERSONAL</span>
+          </div>
           <div class="project-preview">
             <img
               src="/media/svg/placeholder.svg"
@@ -146,12 +88,6 @@ permalink: /
               loading="lazy"
               decoding="async"
             />
-            <span class="preview-index" aria-hidden="true"
-              >001 / SPHOON</span
-            >
-            <span class="preview-label" aria-hidden="true"
-              >IMAGE PREVIEW</span
-            >
             <picture class="project-banner">
               <source
                 type="image/webp"
@@ -163,7 +99,7 @@ permalink: /
                   /media/webp/sphoon/banner-800.webp 800w,
                   /media/webp/sphoon/banner-960.webp 960w
                 "
-                sizes="(max-width: 400px) calc(100vw - 84px), (max-width: 700px) calc(90vw - 44px), (max-width: 720px) calc(41.5vw - 23px), (max-width: 1571px) calc(40.25vw - 14px), (max-width: 1600px) calc(43.75vw - 69px), 631px"
+                sizes="(max-width: 400px) calc(100vw - 42px), (max-width: 700px) calc(90vw - 2px), (max-width: 1440px) calc(40.25vw - 14px), 568px"
               />
               <img
                 src="/media/png/sphoon/banner.png"
@@ -194,13 +130,16 @@ permalink: /
                 />
               </svg>
             </div>
-            <p>My personal projects and code.</p>
+            <p>Personal repositories, experiments, and maintained code.</p>
             <span class="tags"
-              >GITHUB <span aria-hidden="true">/</span> PERSONAL</span
+              >GITHUB <span aria-hidden="true">/</span> PROFILE</span
             >
           </div>
         </a>
-        <a class="project" href="https://github.com/nlobby4">
+        <a class="project indexed-panel" href="https://github.com/nlobby4">
+          <div class="entry-register" aria-hidden="true">
+            <span>ENTRY / 002</span><span>COMMUNITY</span>
+          </div>
           <div class="project-preview">
             <img
               src="/media/svg/placeholder.svg"
@@ -210,12 +149,6 @@ permalink: /
               loading="lazy"
               decoding="async"
             />
-            <span class="preview-index" aria-hidden="true"
-              >002 / NLOBBY4</span
-            >
-            <span class="preview-label" aria-hidden="true"
-              >IMAGE PREVIEW</span
-            >
             <picture class="project-banner">
               <source
                 type="image/webp"
@@ -227,11 +160,11 @@ permalink: /
                   /media/webp/nlobby4/banner-800.webp 800w,
                   /media/webp/nlobby4/banner-960.webp 960w
                 "
-                sizes="(max-width: 400px) calc(100vw - 84px), (max-width: 700px) calc(90vw - 44px), (max-width: 720px) calc(41.5vw - 23px), (max-width: 1571px) calc(40.25vw - 14px), (max-width: 1600px) calc(43.75vw - 69px), 631px"
+                sizes="(max-width: 400px) calc(100vw - 42px), (max-width: 700px) calc(90vw - 2px), (max-width: 1440px) calc(40.25vw - 14px), 568px"
               />
               <img
                 src="/media/png/nlobby4/banner.png"
-                alt="Colorful nlobby4 graffiti and character artwork."
+                alt="nlobby4 banner artwork."
                 width="960"
                 height="540"
                 loading="lazy"
@@ -259,7 +192,7 @@ permalink: /
               </svg>
             </div>
             <p>
-              Open-source projects and tools around the Flockmod
+              Open-source projects and tools for the Flockmod
               community.
             </p>
             <span class="tags"
@@ -277,10 +210,52 @@ permalink: /
     </div>
     <div class="section-body">
       <div class="section-heading">
-        <h2 id="links-title">Elsewhere.</h2>
+        <h2 id="links-title">Elsewhere</h2>
         <span class="eyebrow">PROFILES</span>
       </div>
       <ul class="link-list">
+        <li>
+          <a href="https://exquz3.me/github">
+            <span>GitHub</span>
+            <span class="short-url">exquz3.me/github</span>
+            <svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://exquz3.me/npm">
+            <span>npm</span>
+            <span class="short-url">exquz3.me/npm</span>
+            <svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              />
+            </svg>
+          </a>
+        </li>
         <li>
           <a href="https://exquz3.me/youtube"
             ><span>YouTube</span
@@ -368,15 +343,12 @@ permalink: /
   <section class="guestbook" id="guestbook" aria-labelledby="guestbook-title">
     <div class="section guestbook-inner">
       <div class="rail" aria-hidden="true">
-        <span>04</span><span>NOTES</span>
+        <span>04</span><span>COMMENTS</span>
       </div>
-      <div class="section-body guestbook-layout">
-        <div class="guestbook-copy">
-          <p class="eyebrow">GUESTBOOK</p>
-          <h2 id="guestbook-title">Leave a mark.</h2>
-          <p class="guestbook-intro">
-            A note, a question, a hello. Sign in with GitHub to leave a message.
-          </p>
+      <div class="section-body">
+        <div class="section-heading">
+          <h2 id="guestbook-title">You were here</h2>
+          <span class="eyebrow">GUESTBOOK</span>
         </div>
         <div class="guestbook-conversation">
           <div class="giscus" id="guestbook-comments">

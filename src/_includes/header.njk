@@ -1,5 +1,5 @@
 <header class="top">
-  <a class="identity" href="/" aria-label="exquz3me home"
+  <div class="identity"
     ><svg
       class="mark"
       viewBox="-3 -33 1007 795"
@@ -9,12 +9,12 @@
       <g transform="translate(0 729) scale(1 -1)">
         <use href="/media/svg/dove.svg#dove" fill="currentColor" />
       </g></svg
-    ><span class="identity-label">PERSONAL / PORTFOLIO</span></a
+    ><span class="identity-label">sphoon</span></div
   >
-  <nav aria-label="Main navigation" tabindex="-1">
+  <nav aria-label="Main navigation">
     <a href="/"{% if navigation == "portfolio" %} aria-current="page"{% endif %}>Portfolio</a>
     <a href="/blog/"{% if navigation == "blog" %} aria-current="page"{% endif %}>Blog</a>
-    <a href="https://exquz3.me/github" aria-label="GitHub profile"
+    <a class="nav-profile" href="https://exquz3.me/github" aria-label="GitHub profile"
       >GitHub
       <svg
         class="arrow"
@@ -31,7 +31,7 @@
           stroke-linejoin="miter"
         /></svg
     ></a>
-    <a href="https://exquz3.me/npm" aria-label="npm profile"
+    <a class="nav-profile" href="https://exquz3.me/npm" aria-label="npm profile"
       >npm
       <svg
         class="arrow"

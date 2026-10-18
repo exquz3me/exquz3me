@@ -45,13 +45,20 @@
   // Run before the page styles load to avoid flashing the wrong saved theme.
   applyTheme();
 
+  // Keep native anchor navigation, enabling animation only for page buttons.
+  document.addEventListener('click', event => {
+    if (event.target.closest('.intro-actions a[href^="#"], footer a[href="#top"]')) {
+      root.dataset.scroll = 'smooth';
+    }
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Tab' || root.dataset.scroll !== 'smooth') return;
+    delete root.dataset.scroll;
+    // Stop any ongoing animation before the browser moves keyboard focus.
+    window.scrollTo({ top: window.scrollY, left: window.scrollX, behavior: 'instant' });
+  }, true);
+
   document.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('.top');
-    const navigation = header?.querySelector('nav');
-    header?.addEventListener('click', event => {
-      if (event.target.closest('a, button')) return;
-      navigation?.focus({ preventScroll: true });
-    });
     const button = document.querySelector('.theme-toggle');
     if (button) {
       button.hidden = false;
@@ -84,6 +91,11 @@
   window.addEventListener('message', event => {
     const frame = document.querySelector('iframe.giscus-frame');
     if (event.origin === 'https://giscus.app' && event.source === frame?.contentWindow && event.data?.giscus?.resizeHeight) {
+      const height = event.data.giscus.resizeHeight;
+      if (typeof height === 'number' && Number.isFinite(height) && height > 0) {
+        // Allow for fractional pixels and the Preview panel's bottom border.
+        frame.style.minHeight = `${Math.ceil(height) + 2}px`;
+      }
       syncGuestbook();
     }
   });

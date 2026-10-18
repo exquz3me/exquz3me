@@ -5,11 +5,11 @@ description: Notes on things I build, fix, and figure out.
 navigation: blog
 permalink: /blog/
 ---
-<main id="main">
+<main class="blog" id="main" tabindex="-1">
   <section class="section blog-intro" aria-labelledby="blog-title">
     <div class="rail" aria-hidden="true"><span>01</span><span>BLOG</span></div>
     <div class="section-body">
-      <p class="eyebrow">EXQUZ3ME / JOURNAL</p>
+      <p class="eyebrow">PERSONAL JOURNAL</p>
       <h1 class="page-title" id="blog-title">Notes from the work.</h1>
       <p class="blog-description">Things I build, fix, and figure out along the way.</p>
     </div>
@@ -18,24 +18,34 @@ permalink: /blog/
     <div class="rail" aria-hidden="true"><span>02</span><span>ARTICLES</span></div>
     <div class="section-body">
       <div class="section-heading">
-        <h2 id="articles-title">Articles.</h2>
+        <h2 id="articles-title">Articles</h2>
         <span class="eyebrow">LATEST FIRST</span>
       </div>
       {% if collections.posts.length %}
       <ol class="post-list">
         {% for post in collections.posts %}
         <li>
-          <a class="post-card" href="{{ post.url }}">
-            <div class="post-meta"><time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time></div>
-            <h3>{{ post.data.title | escape }}</h3>
-            {% if post.data.description %}<p>{{ post.data.description | escape }}</p>{% endif %}
-            <span class="post-read-more">Read article <span aria-hidden="true">↗</span></span>
+          <a class="post-card indexed-panel" href="{{ post.url }}">
+            <div class="entry-register">
+              <span aria-hidden="true">ENTRY / {% if loop.revindex < 10 %}00{% elif loop.revindex < 100 %}0{% endif %}{{ loop.revindex }}</span>
+              <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+            </div>
+            <div class="post-card-content">
+              <h3>{{ post.data.title | escape }}</h3>
+              {% if post.data.description %}<p>{{ post.data.description | escape }}</p>{% endif %}
+              <span class="post-read-more">Read article <span aria-hidden="true">↗</span></span>
+            </div>
           </a>
         </li>
         {% endfor %}
       </ol>
       {% else %}
-      <p class="blog-empty">No articles published yet.</p>
+      <div class="blog-empty indexed-panel">
+        <div class="entry-register" aria-hidden="true">
+          <span>INDEX / 000</span><span>NO ENTRIES</span>
+        </div>
+        <p>No articles published yet.</p>
+      </div>
       {% endif %}
     </div>
   </section>
