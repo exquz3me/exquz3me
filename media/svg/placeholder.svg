@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <style>
+    :root { --background: #eee; --grid: #dfdfdf; --cross: #c9c9c9; --rear: #aaa; --front: #777; --plus: #222; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #111; --grid: #202020; --cross: #363636; --rear: #555; --front: #888; --plus: #ddd; }
+    }
+  </style>
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M50 0H0V50" stroke="var(--grid)"/>
+    </pattern>
+  </defs>
+  <path fill="var(--background)" d="M0 0h800v450H0z"/>
+  <path fill="url(#grid)" d="M0 0h800v450H0z"/>
+  <path d="M0 225h800M400 0v450" stroke="var(--cross)" stroke-dasharray="4 8"/>
+  <rect x="326" y="151" width="148" height="148" stroke="var(--rear)" transform="rotate(-12 400 225)"/>
+  <rect x="326" y="151" width="148" height="148" fill="var(--background)" stroke="var(--front)"/>
+  <path d="M386 225h28m-14-14v28" stroke="var(--plus)" stroke-width="2"/>
+  <path d="M16 28V16h12m744 0h12v12M16 422v12h12m744 0h12v-12" stroke="var(--rear)"/>
+</svg>
