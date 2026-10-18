@@ -1,0 +1,36 @@
+# --------------------------------------------------
+# Dependabot configuration file.
+#
+# Dependabot opens pull requests to keep GitHub Actions dependencies up to date.
+# Updates are checked weekly. Minor and patch releases are grouped to reduce
+# PR noise, while major releases remain separate for explicit review.
+# Version updates wait seven days after release before becoming eligible.
+# For onboarded workflows, Dependabot also updates actions.lock.
+#
+# For more information please see:
+# https://docs.github.com/en/code-security/dependabot
+# --------------------------------------------------
+
+# yaml-language-server: $schema=https://json.schemastore.org/dependabot-2.0.json
+
+version: 2
+updates:
+  # GitHub Actions workflow updates
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: ci
+      include: scope
+    cooldown:
+      default-days: 7
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
