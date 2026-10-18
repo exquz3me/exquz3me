@@ -1,0 +1,91 @@
+# --------------------------------------------------
+# CD Pages workflow.
+#
+# Builds the portfolio and blog with Eleventy, then publishes the generated
+# site to GitHub Pages. Pushes to main and manual runs can start the workflow.
+# Only main may deploy to the github-pages environment.
+#
+# The Node version comes from package.json, using its bundled npm version.
+# Dependencies are installed from package-lock.json. The build job has
+# read-only repository access, while the deployment job owns Pages and OIDC
+# permissions.
+#
+# Deployments run one at a time without canceling an active publication.
+#
+# For more information please see:
+# https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+# --------------------------------------------------
+
+name: CD Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-pages
+  cancel-in-progress: false
+
+# Deny all by default, jobs declare their own permissions as needed
+permissions: {}
+
+jobs:
+  # --------------------------
+  # Build
+  # --------------------------
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version-file: package.json
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies from lockfile
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: _site
+
+  # --------------------------
+  # Deploy
+  # --------------------------
+  deploy:
+    name: deploy
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
