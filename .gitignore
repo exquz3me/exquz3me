@@ -32,11 +32,15 @@
 # Allow specific root-level directories
 !/.github/**
 !/.vscode/**
+!/src/**
 !/media/**
 
 # Allow specific root-level file types
 !/*.*ignore
 !/*.md
+!/*.html
+!/*.json
+!/*.config.js
 
 # Allow specific root-level files
 !/.editorconfig
