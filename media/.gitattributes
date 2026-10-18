@@ -171,3 +171,17 @@
 # Define rules for specific files or directories here.
 # Keep general file-type rules in the sections above.
 # --------------------------
+
+# Site assets stay in regular Git for GitHub Pages delivery
+
+# Graphics
+*.[wW][eE][bB][pP]      -filter -diff -merge -text
+*.[pP][nN][gG]          -filter -diff -merge -text
+
+# Fonts
+*.[wW][oO][fF][fF]      -filter -diff -merge -text
+*.[wW][oO][fF][fF]2     -filter -diff -merge -text
+*.[tT][tT][fF]          -filter -diff -merge -text
+*.[tT][tT][cC]          -filter -diff -merge -text
+*.[oO][tT][fF]          -filter -diff -merge -text
+*.[eE][oO][tT]          -filter -diff -merge -text
