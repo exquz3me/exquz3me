@@ -190,6 +190,28 @@
 *.[zZ][sS][tT]                      binary
 
 # --------------------------
+# Web Rules
+#
+# Keep web source as LF-normalized text and use Git's built-in diff patterns
+# for HTML and CSS. Keep JavaScript and minified files visible in diffs.
+# Git attributes do not configure browser caching, MIME types, or deployment.
+# Site images and fonts stay outside LFS through media/.gitattributes.
+# --------------------------
+
+# Markup
+*.[hH][tT][mM]                      text eol=lf diff=html
+*.[hH][tT][mM][lL]                  text eol=lf diff=html
+*.[xX][hH][tT][mM][lL]              text eol=lf diff=html
+
+# Stylesheets
+*.[cC][sS][sS]                      text eol=lf diff=css
+
+# JavaScript
+*.[jJ][sS]                          text eol=lf
+*.[mM][jJ][sS]                      text eol=lf
+*.[cC][jJ][sS]                      text eol=lf
+
+# --------------------------
 # Conditional Rules
 #
 # Formats whose handling depends on their contents or consumers.
