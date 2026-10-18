@@ -4,7 +4,6 @@
 # Dependabot opens pull requests to keep dependencies up to date
 # automatically. It supports a wide range of package ecosystems and
 # can be configured to group updates, set schedules, and apply labels.
-# For onboarded workflows, Dependabot also updates actions.lock.
 #
 # Minor and patch releases are grouped together to reduce PR noise.
 # Major releases are left as individual pull requests for explicit review.
