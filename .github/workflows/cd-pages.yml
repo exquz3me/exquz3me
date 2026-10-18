@@ -2,8 +2,8 @@
 # CD Pages workflow.
 #
 # Builds the portfolio and blog with Eleventy, then publishes the generated
-# site to GitHub Pages. Pushes to main and manual runs can start the workflow.
-# Only main may deploy to the github-pages environment.
+# site to GitHub Pages. Pull requests to main also run the read-only build.
+# Only main pushes and manual main runs upload an artifact and deploy.
 #
 # The Node version comes from package.json, using its bundled npm version.
 # Dependencies are installed from package-lock.json. The build job has
@@ -19,13 +19,16 @@
 name: CD Pages
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
   workflow_dispatch:
 
 concurrency:
-  group: ${{ github.workflow }}-pages
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: false
 
 # Deny all by default, jobs declare their own permissions as needed
@@ -36,7 +39,7 @@ jobs:
   # Build
   # --------------------------
   build:
-    name: build
+    name: Site build
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
@@ -61,7 +64,16 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Verify generated site files
+        run: |
+          test -s _site/index.html
+          test -s _site/blog/index.html
+          test -s _site/assets/theme.js
+          test -s _site/assets/site.css
+          test -s _site/giscus.json
+
       - name: Upload Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: _site
@@ -71,7 +83,7 @@ jobs:
   # --------------------------
   deploy:
     name: deploy
-    if: github.ref == 'refs/heads/main'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10
