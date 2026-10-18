@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+---
+<main id="main">
+  <header class="section article-heading">
+    <div class="rail" aria-hidden="true"><span>01</span><span>ARTICLE</span></div>
+    <div class="section-body">
+      <a class="article-back" href="/blog/">← All articles</a>
+      <h1 class="page-title">{{ title | escape }}</h1>
+      <p class="post-meta"><time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time></p>
+    </div>
+  </header>
+  <div class="section article-content">
+    <div aria-hidden="true"></div>
+    <article class="section-body post-body" aria-label="{{ title | escape }}">
+      {{ content | safe }}
+    </article>
+  </div>
+</main>

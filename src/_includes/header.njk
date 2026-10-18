@@ -1,0 +1,67 @@
+<header class="top">
+  <a class="identity" href="/" aria-label="exquz3me home"
+    ><svg
+      class="mark"
+      viewBox="-3 -33 1007 795"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <g transform="translate(0 729) scale(1 -1)">
+        <use href="/media/svg/dove.svg#dove" fill="currentColor" />
+      </g></svg
+    ><span class="identity-label">PERSONAL / PORTFOLIO</span></a
+  >
+  <nav aria-label="Main navigation" tabindex="-1">
+    <a href="/"{% if navigation == "portfolio" %} aria-current="page"{% endif %}>Portfolio</a>
+    <a href="/blog/"{% if navigation == "blog" %} aria-current="page"{% endif %}>Blog</a>
+    <a href="https://exquz3.me/github" aria-label="GitHub profile"
+      >GitHub
+      <svg
+        class="arrow"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M5 19 19 5M5 5h14v14"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="square"
+          stroke-linejoin="miter"
+        /></svg
+    ></a>
+    <a href="https://exquz3.me/npm" aria-label="npm profile"
+      >npm
+      <svg
+        class="arrow"
+        viewBox="0 0 24 24"
+        fill="none"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M5 19 19 5M5 5h14v14"
+          stroke="currentColor"
+          stroke-width="1.8"
+          stroke-linecap="square"
+          stroke-linejoin="miter"
+        /></svg
+    ></a>
+    <button
+      class="theme-toggle"
+      type="button"
+      aria-label="Dark theme"
+      aria-pressed="false"
+      hidden
+    >
+      <svg class="theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5" />
+      </svg>
+      <svg class="theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false">
+        <path d="M20.5 13.5A8.5 8.5 0 0 1 10.5 3a8.5 8.5 0 1 0 10 10.5Z" />
+      </svg>
+    </button>
+  </nav>
+</header>

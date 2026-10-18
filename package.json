@@ -1,0 +1,18 @@
+{
+  "name": "@sphoon/portfolio",
+  "private": true,
+  "type": "module",
+  "description": "personal portfolio website of exquz3me",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('_site', { recursive: true, force: true });\" && eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7"
+  },
+  "packageManager": "npm@11.12.1",
+  "engines": {
+    "node": ">=24.15.0 <25",
+    "npm": ">=11.12.1 <12"
+  }
+}

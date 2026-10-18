@@ -1,0 +1,411 @@
+---
+layout: layouts/base.njk
+title: sphoon's portfolio
+description: My projects and links. You found them.
+navigation: portfolio
+permalink: /
+---
+<div class="background-line" aria-hidden="true" hidden>
+  <svg
+    viewBox="0 0 1200 1800"
+    preserveAspectRatio="none"
+    fill="none"
+    focusable="false"
+  >
+    <defs>
+      <linearGradient
+        id="page-gradient"
+        x1="0"
+        y1="0"
+        x2="1200"
+        y2="1800"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#ff528f" />
+        <stop offset=".2" stop-color="#ff8b47" />
+        <stop offset=".4" stop-color="#e4ef73" />
+        <stop offset=".6" stop-color="#62e3b8" />
+        <stop offset=".8" stop-color="#65baff" />
+        <stop offset="1" stop-color="#be7bff" />
+      </linearGradient>
+      <filter
+        id="line-text-softness"
+        x="-50%"
+        y="-100%"
+        width="200%"
+        height="300%"
+      >
+        <feGaussianBlur stdDeviation="5" />
+      </filter>
+      <mask
+        id="line-text-fade"
+        maskUnits="userSpaceOnUse"
+        style="mask-type: luminance"
+      >
+        <rect
+          class="line-mask-base"
+          width="1200"
+          height="1800"
+          fill="#fff"
+        />
+        <g
+          class="line-text-zones"
+          fill="#000"
+          filter="url(#line-text-softness)"
+        ></g>
+      </mask>
+    </defs>
+    <g mask="url(#line-text-fade)">
+      <path
+        class="routed-line"
+        visibility="hidden"
+        d="M-80 80 C720 0 1260 0 1260 230 S100 425 100 625 S1100 725 1100 900 C1100 1040 70 905 70 1105 C70 1285 820 1075 820 1375 C820 1535 600 1595 600 1800"
+        stroke="url(#page-gradient)"
+        stroke-width="8"
+        stroke-linecap="round"
+        vector-effect="non-scaling-stroke"
+      />
+    </g>
+  </svg>
+</div>
+<main id="main">
+  <section class="section intro" aria-labelledby="intro-title">
+    <div class="rail" aria-hidden="true">
+      <span>01</span><span>INTRO</span>
+    </div>
+    <div class="section-body">
+      <p class="eyebrow">EXQUZ3ME / PORTFOLIO</p>
+      <div class="hero">
+        <h1 id="intro-title">
+          <span>Evidence that</span><span>I own a computer.</span>
+        </h1>
+        <img
+          class="hero-dove"
+          src="/media/svg/dove.svg"
+          width="150"
+          height="150"
+          alt=""
+        />
+        <div class="intro-actions">
+          <a class="button" href="#work"
+            >Explore the work
+            <svg
+              class="arrow arrow-down"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              /></svg
+          ></a>
+          <a class="button" href="#links"
+            >Find me elsewhere
+            <svg
+              class="arrow arrow-down"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section work" id="work" aria-labelledby="work-title">
+    <div class="rail" aria-hidden="true">
+      <span>02</span><span>WORK</span>
+    </div>
+    <div class="section-body">
+      <div class="section-heading">
+        <h2 id="work-title">Projects.</h2>
+        <span class="eyebrow">GITHUB</span>
+      </div>
+      <div class="project-grid">
+        <a class="project" href="https://github.com/exquz3me">
+          <div class="project-preview">
+            <img
+              src="/media/svg/placeholder.svg"
+              alt=""
+              width="800"
+              height="450"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="preview-index" aria-hidden="true"
+              >001 / SPHOON</span
+            >
+            <span class="preview-label" aria-hidden="true"
+              >IMAGE PREVIEW</span
+            >
+            <picture class="project-banner">
+              <source
+                type="image/webp"
+                srcset="
+                  /media/webp/sphoon/banner-240.webp 240w,
+                  /media/webp/sphoon/banner-320.webp 320w,
+                  /media/webp/sphoon/banner-480.webp 480w,
+                  /media/webp/sphoon/banner-640.webp 640w,
+                  /media/webp/sphoon/banner-800.webp 800w,
+                  /media/webp/sphoon/banner-960.webp 960w
+                "
+                sizes="(max-width: 400px) calc(100vw - 84px), (max-width: 700px) calc(90vw - 44px), (max-width: 720px) calc(41.5vw - 23px), (max-width: 1571px) calc(40.25vw - 14px), (max-width: 1600px) calc(43.75vw - 69px), 631px"
+              />
+              <img
+                src="/media/png/sphoon/banner.png"
+                alt="sphoon banner artwork."
+                width="960"
+                height="540"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="project-copy">
+            <div class="project-heading">
+              <h3>sphoon</h3>
+              <svg
+                class="arrow project-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M5 19 19 5M5 5h14v14"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="square"
+                  stroke-linejoin="miter"
+                />
+              </svg>
+            </div>
+            <p>My personal projects and code.</p>
+            <span class="tags"
+              >GITHUB <span aria-hidden="true">/</span> PERSONAL</span
+            >
+          </div>
+        </a>
+        <a class="project" href="https://github.com/nlobby4">
+          <div class="project-preview">
+            <img
+              src="/media/svg/placeholder.svg"
+              alt=""
+              width="800"
+              height="450"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="preview-index" aria-hidden="true"
+              >002 / NLOBBY4</span
+            >
+            <span class="preview-label" aria-hidden="true"
+              >IMAGE PREVIEW</span
+            >
+            <picture class="project-banner">
+              <source
+                type="image/webp"
+                srcset="
+                  /media/webp/nlobby4/banner-240.webp 240w,
+                  /media/webp/nlobby4/banner-320.webp 320w,
+                  /media/webp/nlobby4/banner-480.webp 480w,
+                  /media/webp/nlobby4/banner-640.webp 640w,
+                  /media/webp/nlobby4/banner-800.webp 800w,
+                  /media/webp/nlobby4/banner-960.webp 960w
+                "
+                sizes="(max-width: 400px) calc(100vw - 84px), (max-width: 700px) calc(90vw - 44px), (max-width: 720px) calc(41.5vw - 23px), (max-width: 1571px) calc(40.25vw - 14px), (max-width: 1600px) calc(43.75vw - 69px), 631px"
+              />
+              <img
+                src="/media/png/nlobby4/banner.png"
+                alt="Colorful nlobby4 graffiti and character artwork."
+                width="960"
+                height="540"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+          <div class="project-copy">
+            <div class="project-heading">
+              <h3>nlobby4</h3>
+              <svg
+                class="arrow project-arrow"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M5 19 19 5M5 5h14v14"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="square"
+                  stroke-linejoin="miter"
+                />
+              </svg>
+            </div>
+            <p>
+              Open-source projects and tools around the Flockmod
+              community.
+            </p>
+            <span class="tags"
+              >GITHUB <span aria-hidden="true">/</span> ORGANIZATION</span
+            >
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section links" id="links" aria-labelledby="links-title">
+    <div class="rail" aria-hidden="true">
+      <span>03</span><span>LINKS</span>
+    </div>
+    <div class="section-body">
+      <div class="section-heading">
+        <h2 id="links-title">Elsewhere.</h2>
+        <span class="eyebrow">PROFILES</span>
+      </div>
+      <ul class="link-list">
+        <li>
+          <a href="https://exquz3.me/youtube"
+            ><span>YouTube</span
+            ><span class="short-url">exquz3.me/youtube</span
+            ><svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="https://exquz3.me/discord"
+            ><span>Discord</span
+            ><span class="short-url">exquz3.me/discord</span
+            ><svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="https://exquz3.me/flockmod"
+            ><span>Flockmod</span
+            ><span class="short-url">exquz3.me/flockmod</span
+            ><svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a href="https://exquz3.me/steam"
+            ><span>Steam</span
+            ><span class="short-url">exquz3.me/steam</span
+            ><svg
+              class="arrow"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M5 19 19 5M5 5h14v14"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="guestbook" id="guestbook" aria-labelledby="guestbook-title">
+    <div class="section guestbook-inner">
+      <div class="rail" aria-hidden="true">
+        <span>04</span><span>NOTES</span>
+      </div>
+      <div class="section-body guestbook-layout">
+        <div class="guestbook-copy">
+          <p class="eyebrow">GUESTBOOK</p>
+          <h2 id="guestbook-title">Leave a mark.</h2>
+          <p class="guestbook-intro">
+            A note, a question, a hello. Sign in with GitHub to leave a message.
+          </p>
+        </div>
+        <div class="guestbook-conversation">
+          <div class="giscus" id="guestbook-comments">
+            <p class="guestbook-fallback">
+              <a href="https://github.com/{{ guestbook.repo }}/discussions">Join the conversation on GitHub.</a>
+            </p>
+          </div>
+        </div>
+        {% if guestbook.repoId and guestbook.categoryId %}
+        <script
+          src="https://giscus.app/client.js"
+          data-repo="{{ guestbook.repo }}"
+          data-repo-id="{{ guestbook.repoId }}"
+          data-category="{{ guestbook.category }}"
+          data-category-id="{{ guestbook.categoryId }}"
+          data-mapping="specific"
+          data-term="Guestbook"
+          data-strict="1"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="transparent_dark"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async
+        ></script>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</main>

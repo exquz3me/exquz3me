@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ description | escape }}" />
+    <meta name="theme-color" content="#fff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#010101" media="(prefers-color-scheme: dark)" />
+    <title>{{ title | escape }}{% if navigation == "blog" %} · sphoon{% endif %}</title>
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="icon" href="/media/svg/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="/media/fonts/raleway-800.woff2" as="font" type="font/woff2" crossorigin />
+    <script src="/assets/theme.js"></script>
+    <link rel="stylesheet" href="/assets/site.css" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page">
+      {% include "header.njk" %}
+      {{ content | safe }}
+      {% include "footer.njk" %}
+    </div>
+  </body>
+</html>
