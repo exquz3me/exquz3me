@@ -239,6 +239,7 @@
 .gitattributes           text eol=lf export-ignore
 .gitkeep                 text eol=lf export-ignore
 .git-blame-ignore-revs   text eol=lf export-ignore
+.gitmessage              text eol=lf export-ignore
 .mailmap                 text eol=lf export-ignore
 
 # Specific files not covered by the generic fallback
