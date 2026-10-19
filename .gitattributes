@@ -242,5 +242,11 @@
 .gitmessage              text eol=lf export-ignore
 .mailmap                 text eol=lf export-ignore
 
+# Files without a file extension
+.gitmessage              text eol=lf
+.editorconfig            text eol=lf
+AUTHORS                  text eol=lf
+CODEOWNERS               text eol=lf
+
 # Specific files not covered by the generic fallback
 # example-crlf.txt      -text
