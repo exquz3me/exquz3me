@@ -211,6 +211,9 @@
 *.[mM][jJ][sS]                      text eol=lf
 *.[cC][jJ][sS]                      text eol=lf
 
+# Nunjucks
+*.[nN][jJ][kK]                      text eol=lf
+
 # --------------------------
 # Conditional Rules
 #
