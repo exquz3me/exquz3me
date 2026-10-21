@@ -7,7 +7,7 @@
 
 import assert from "node:assert/strict";
 import test from "node:test";
-import { fingerprint, trackPages, validateHistory, renderSitemap, loadHistory } from "../lib/page-history.js";
+import { fingerprint, trackPages, validateHistory, renderSitemap, loadHistory, fetchOriginHistory } from "../lib/page-history.js";
 
 const origin = "https://exquz3.me";
 const first = new Date("2026-01-01T00:00:00.000Z");
@@ -118,4 +118,28 @@ test("hub links do not merge subdomain pages or histories", () => {
   assert.deepEqual(trackPages([page(content)], hub, origin, next), hub);
   const changedLink = content.replace("example.exquz3.me", "another.exquz3.me");
   assert.equal(trackPages([page(changedLink)], hub, origin, next).pages[origin + "/"].lastmod, next.toISOString());
+});
+
+
+test("Pages origin reads retain canonical HTTPS identity and do not follow redirects", async () => {
+  const url = new URL(origin + "/page-history.json");
+  const response = await fetchOriginHistory(url, "exquz3me.github.io", async (command, args, options) => {
+    assert.equal(command, "curl");
+    assert.equal(args[0], "--disable");
+    assert.equal(args[args.indexOf("--connect-to") + 1], "exquz3.me:443:exquz3me.github.io:443");
+    assert.equal(args[args.indexOf("--url") + 1], url.href);
+    assert.equal(args.includes("--insecure"), false);
+    assert.equal(args.includes("--location"), false);
+    assert.ok(options.timeout > 0);
+    return { stdout: '{"example":true}\n200' };
+  });
+  assert.equal(response.status, 200);
+  assert.deepEqual(await response.json(), { example: true });
+  for (const status of [403, 404, 500, 302]) {
+    const denied = await fetchOriginHistory(url, "exquz3me.github.io", async () => ({ stdout: `body\n${status}` }));
+    assert.equal(denied.status, status);
+  }
+  await assert.rejects(fetchOriginHistory(url, "untrusted.example"), /github.io/);
+  await assert.rejects(fetchOriginHistory(url, "exquz3me.github.io", async () => ({ stdout: "broken" })));
+  await assert.rejects(fetchOriginHistory(url, "exquz3me.github.io", async () => { throw new Error("TLS failure"); }), /TLS failure/);
 });

@@ -84,7 +84,7 @@ export default function (eleventyConfig) {
   let baseline;
   eleventyConfig.on("eleventy.before", async () => {
     sitemapPages.clear();
-    baseline = await loadHistory(site.url, remoteHistory);
+    baseline = await loadHistory(site.url, remoteHistory, process.env.LASTMOD_ORIGIN_HOST);
   });
   eleventyConfig.on("eleventy.after", async ({ results, directories, outputMode }) => {
     if (outputMode !== "fs") return;

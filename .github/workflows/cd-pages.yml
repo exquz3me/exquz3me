@@ -10,9 +10,11 @@
 # read-only repository access, while the deployment job owns Pages and OIDC
 # permissions.
 #
-# Builds compare rendered content with the public deployed page history;
+# Builds compare rendered content with the deployed GitHub Pages origin history;
 # modification dates survive unchanged builds without additional credentials.
-# The history is published in the same artifact as the matching sitemap.
+# The origin connection retains canonical-host HTTPS certificate verification
+# and avoids making builds depend on Cloudflare visitor challenges. The history
+# is published in the same artifact as the matching sitemap.
 #
 # Deployments run one at a time without canceling an active publication.
 #
@@ -71,6 +73,7 @@ jobs:
       - name: Build site
         env:
           LASTMOD_USE_DEPLOYED_HISTORY: "true"
+          LASTMOD_ORIGIN_HOST: ${{ github.repository_owner }}.github.io
         run: npm run build
 
       - name: Verify generated site files

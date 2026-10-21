@@ -28,6 +28,7 @@ test("clean builds retain history, detect published changes and exclude unpublis
       const env = { ...process.env, ELEVENTY_RUN_MODE: "build" };
       delete env.LASTMOD_BASELINE_URL;
       delete env.LASTMOD_USE_DEPLOYED_HISTORY;
+      delete env.LASTMOD_ORIGIN_HOST;
       execFileSync(process.execPath, [join(root, "node_modules/@11ty/eleventy/cmd.cjs")], {
         cwd: work, env, stdio: "pipe",
       });
