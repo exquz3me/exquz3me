@@ -1,6 +1,6 @@
 export default {
   layout: "layouts/post.njk",
   navigation: "blog",
-  tags: ["posts"],
+  tags: ["posts", "sitemap"],
   permalink: data => `/blog/${data.page.fileSlug}/`,
 };
