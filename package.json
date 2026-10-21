@@ -5,10 +5,12 @@
   "description": "personal portfolio website of exquz3me",
   "scripts": {
     "dev": "eleventy --serve",
-    "build": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('_site', { recursive: true, force: true });\" && eleventy"
+    "build": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('_site', { recursive: true, force: true });\" && eleventy",
+    "test": "node --test"
   },
   "devDependencies": {
-    "@11ty/eleventy": "3.1.7"
+    "@11ty/eleventy": "3.1.7",
+    "htmlparser2": "7.2.0"
   },
   "packageManager": "npm@11.12.1",
   "engines": {

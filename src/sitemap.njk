@@ -7,6 +7,8 @@ eleventyExcludeFromCollections: true
 {% for entry in collections.sitemap %}
   <url>
     <loc>{{ (site.url + entry.url) | escape }}</loc>
+    {% set lastmod = entry | sitemapLastmod(collections.posts) %}
+    {% if lastmod %}<lastmod>{{ lastmod }}</lastmod>{% endif %}
   </url>
 {% endfor %}
 </urlset>

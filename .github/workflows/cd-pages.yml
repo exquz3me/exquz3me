@@ -10,6 +10,10 @@
 # read-only repository access, while the deployment job owns Pages and OIDC
 # permissions.
 #
+# Builds compare rendered content with the public deployed page history;
+# modification dates survive unchanged builds without additional credentials.
+# The history is published in the same artifact as the matching sitemap.
+#
 # Deployments run one at a time without canceling an active publication.
 #
 # For more information please see:
@@ -61,7 +65,12 @@ jobs:
       - name: Install dependencies from lockfile
         run: npm ci
 
+      - name: Test page modification tracking
+        run: npm test
+
       - name: Build site
+        env:
+          LASTMOD_USE_DEPLOYED_HISTORY: "true"
         run: npm run build
 
       - name: Verify generated site files
@@ -71,6 +80,8 @@ jobs:
           test -s _site/assets/theme.js
           test -s _site/assets/site.css
           test -s _site/giscus.json
+          test -s _site/sitemap.xml
+          test -s _site/page-history.json
 
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
