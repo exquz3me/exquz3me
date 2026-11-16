@@ -9,7 +9,7 @@
     "test": "node --test"
   },
   "devDependencies": {
-    "@11ty/eleventy": "3.1.7",
+    "@11ty/eleventy": "3.1.8",
     "htmlparser2": "7.2.0"
   },
   "packageManager": "npm@11.12.1",
